@@ -1,4 +1,4 @@
-import { Home } from '@/src/presentation/pages/Home'
+import { Home } from '@/presentation/pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export function Router() {
