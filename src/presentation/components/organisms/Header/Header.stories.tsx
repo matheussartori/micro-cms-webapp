@@ -3,7 +3,7 @@ import { Header } from './'
 import { BrowserRouter } from 'react-router-dom'
 
 export default {
-  title: 'Molecules/Header',
+  title: 'Organisms/Header',
   component: Header,
   decorators: [
     (Story) => {
