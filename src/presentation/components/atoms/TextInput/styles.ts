@@ -4,7 +4,7 @@ export const Container = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: 6,
-  height: 30,
+  height: 35,
   padding: '0.5rem 1rem',
   borderRadius: 6,
   backgroundColor: '$gray800'

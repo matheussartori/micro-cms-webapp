@@ -1,5 +1,6 @@
 import { Logo } from '../../atoms/Logo'
 import { MenuItem } from '../../atoms/MenuItem'
+import { SearchBar } from '../../molecules/SearchBar'
 import { Container, Content, Navigation } from './styles'
 
 export function Header() {
@@ -13,6 +14,7 @@ export function Header() {
           <MenuItem to="/blog">Blog</MenuItem>
           <MenuItem to="/contact">Contact</MenuItem>
         </Navigation>
+        <SearchBar />
       </Content>
     </Container>
   )

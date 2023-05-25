@@ -1,11 +1,14 @@
 import { ComponentProps } from 'react'
 import { Container, Input } from './styles'
+import { CSS } from '@stitches/react'
 
-export type TextInputProps = ComponentProps<typeof Input>
+export interface TextInputProps extends ComponentProps<typeof Input> {
+  containerCss?: CSS
+}
 
-export function TextInput(props: TextInputProps) {
+export function TextInput({ containerCss, ...props }: TextInputProps) {
   return (
-    <Container>
+    <Container css={containerCss}>
       <Input {...props} />
     </Container>
   )

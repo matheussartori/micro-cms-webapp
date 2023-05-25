@@ -11,6 +11,7 @@ export const Button = styled('button', {
   borderRadius: '6px',
   border: 'none',
   fontSize: '$sm',
+  height: 35,
 
   '&:hover': {
     transition: 'background-color 0.2s',
