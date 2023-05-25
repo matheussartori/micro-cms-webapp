@@ -10,12 +10,13 @@ export default {
       return (
         <BrowserRouter>
           {Story()}
+          <MenuItem to="/other">Ipsum</MenuItem>
         </BrowserRouter>
       )
     }
   ],
   args: {
-    children: 'Lorem ipsum',
+    children: 'Lorem',
     to: '/'
   },
   argTypes: {
