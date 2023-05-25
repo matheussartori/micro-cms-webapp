@@ -10,3 +10,4 @@
 ## Not explicit, but will be created
 
 - **About**: Page with details of the development process.
+- **Home**: Page with some lorem texts, images and videos (this content won't be editable).
