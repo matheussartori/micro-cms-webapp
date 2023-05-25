@@ -14,7 +14,7 @@ describe('MenuItem Component', () => {
     expect(textComponent).toBeDefined()
   })
 
-  it('should redirect to a page', () => {
+  it('should redirect to correct page', () => {
     const history = createMemoryHistory()
 
     history.push = vi.fn()
@@ -29,6 +29,15 @@ describe('MenuItem Component', () => {
 
     fireEvent.click(menuItem)
 
-    expect(history.push).toHaveBeenCalled()
+    expect(history.push).toHaveBeenCalledWith({
+      hash: '',
+      pathname: '/about',
+      search: ''
+    }, undefined, {
+      preventScrollReset: undefined,
+      relative: undefined,
+      replace: false,
+      state: undefined
+    })
   })
 })
