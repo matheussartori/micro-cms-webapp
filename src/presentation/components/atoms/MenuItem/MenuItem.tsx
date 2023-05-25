@@ -1,13 +1,15 @@
 import { styled } from '@/presentation/styles/stitches.config'
 import { ComponentProps } from 'react'
+import { Link } from 'react-router-dom'
 
 export interface MenuItemProps extends ComponentProps<typeof MenuItem> {
   children: string
 }
 
-export const MenuItem = styled('p', {
+export const MenuItem = styled(Link, {
   fontFamily: '$default',
   display: 'inline-block',
+  cursor: 'pointer',
 
   position: 'relative',
   padding: '0 0.5rem',
