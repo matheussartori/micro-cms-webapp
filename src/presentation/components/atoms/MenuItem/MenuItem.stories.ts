@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { MenuItem, type TextProps } from './'
+import { MenuItem, type MenuItemProps } from './'
 
 export default {
   title: 'Atoms/MenuItem',
@@ -37,11 +37,11 @@ export default {
       }
     }
   }
-} as Meta<TextProps>
+} as Meta<MenuItemProps>
 
-export const Primary: StoryObj<TextProps> = {}
+export const Primary: StoryObj<MenuItemProps> = {}
 
-export const CustomTag: StoryObj<TextProps> = {
+export const CustomTag: StoryObj<MenuItemProps> = {
   args: {
     children: 'Strong text',
     as: 'strong'
