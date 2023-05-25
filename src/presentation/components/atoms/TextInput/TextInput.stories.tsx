@@ -17,6 +17,11 @@ export default {
       control: {
         type: null
       }
+    },
+    containerCss: {
+      control: {
+        type: null
+      }
     }
   }
 } as Meta
