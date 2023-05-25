@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from './Text'
+import { Text, type TextProps } from './'
 
 export default {
   title: 'Atoms/Text',
@@ -9,6 +9,21 @@ export default {
     children: 'Lorem ipsum'
   },
   argTypes: {
+    as: {
+      control: {
+        type: null
+      }
+    },
+    css: {
+      control: {
+        type: null
+      }
+    },
+    active: {
+      control: {
+        type: 'boolean'
+      }
+    },
     size: {
       options: [
         'xs',
