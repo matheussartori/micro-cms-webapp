@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
-import { globalStyles } from '../src/presentation/styles/global'
+import { themes } from '@storybook/theming'
 
+import { globalStyles } from '../src/presentation/styles/global'
 globalStyles()
 
 const preview: Preview = {
@@ -13,6 +14,9 @@ const preview: Preview = {
           value: '#121214'
         }
       ]
+    },
+    docs: {
+      theme: themes.dark
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
