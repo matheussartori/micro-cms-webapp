@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@/tests/test-utils'
+import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 import { Post } from './Post'
 
 describe('Post Component', () => {
   it('should render with correct props', () => {
-    render(
+    renderWithBrowserRouter(
       <Post
         title="Lorem Ipsum"
         id="any"

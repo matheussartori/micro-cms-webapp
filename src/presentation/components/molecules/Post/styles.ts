@@ -26,3 +26,9 @@ export const HtmlContainer = styled('div', {
   color: '$gray200',
   fontSize: '$md'
 })
+
+export const Actions = styled('div', {
+  display: 'flex',
+  marginTop: '2rem',
+  gap: '1rem'
+})

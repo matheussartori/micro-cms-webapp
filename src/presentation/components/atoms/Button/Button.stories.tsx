@@ -22,3 +22,9 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {}
+
+export const Danger: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'danger'
+  }
+}
