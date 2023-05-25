@@ -1,4 +1,4 @@
-import { Header } from '@/presentation/components/molecules/Header'
+import { Header } from '@/presentation/components/organisms/Header'
 import { Outlet } from 'react-router-dom'
 
 export function Layout() {
