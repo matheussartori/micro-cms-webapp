@@ -1,25 +1,17 @@
-import { styled } from '@/presentation/styles/stitches.config'
 import { ComponentProps, ElementType, ReactNode } from 'react'
+import { TextComponent } from './styles'
 
-export interface TextProps extends ComponentProps<typeof Text> {
-  children: ReactNode
-  size: 'xs' | 'sm' | 'md' | 'lg' |'xl'
+export interface TextProps extends ComponentProps<typeof TextComponent> {
+  children?: ReactNode
+  size?: 'xs' | 'sm' | 'md' | 'lg' |'xl'
   as?: ElementType
+  __dangerouslySetInnerHTML?: {
+    html: string
+  }
 }
 
-export const Text = styled('p', {
-  fontFamily: '$default',
-  display: 'inline-block',
-
-  color: '$gray300',
-
-  variants: {
-    size: {
-      xs: { fontSize: '$xs' },
-      sm: { fontSize: '$sm' },
-      md: { fontSize: '$md' },
-      lg: { fontSize: '$lg' },
-      xl: { fontSize: '$xl' }
-    }
-  }
-})
+export function Text({ size = 'md', ...props}: TextProps) {
+  return (
+    <TextComponent size={size} {...props} />
+  )
+}
