@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
 
-import { BlogTemplate } from './index.ts'
+import { BlogTemplate } from './'
 
 describe('BlogTemplate Component', () => {
   it('should render correctly', () => {
