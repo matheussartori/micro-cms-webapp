@@ -1,5 +1,5 @@
 import { BlogPost } from '@/data/models/blog-post'
-import { Container } from './styles'
+import { Container, HtmlContainer } from './styles'
 import { Text } from '../../atoms/Text'
 
 export interface PostProps {
@@ -11,7 +11,7 @@ export function Post({ post }: PostProps) {
     <Container>
       <Text as="h1">{post.title}</Text>
       <Text as="time">{post.time}</Text>
-      <Text __dangerouslySetInnerHTML={{ html: post.content }}/>
+      <HtmlContainer dangerouslySetInnerHTML={{ __html: post.content }} />
     </Container>
   )
 }

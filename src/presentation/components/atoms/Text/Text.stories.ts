@@ -9,6 +9,11 @@ export default {
     children: 'Lorem ipsum'
   },
   argTypes: {
+    __dangerouslySetInnerHTML: {
+      control: {
+        type: null
+      }
+    },
     as: {
       control: {
         type: null
