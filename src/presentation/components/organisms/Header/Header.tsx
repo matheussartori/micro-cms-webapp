@@ -9,10 +9,10 @@ export function Header() {
       <Content>
         <Logo />
         <Navigation>
-          <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="/about">About</MenuItem>
-          <MenuItem to="/blog">Blog</MenuItem>
-          <MenuItem to="/contact">Contact</MenuItem>
+          <MenuItem to="/" end>Home</MenuItem>
+          <MenuItem to="/about" end>About</MenuItem>
+          <MenuItem to="/blog" end>Blog</MenuItem>
+          <MenuItem to="/contact" end>Contact</MenuItem>
         </Navigation>
         <SearchBar />
       </Content>

@@ -1,5 +1,5 @@
 import { BlogPostItem } from '@/data/models/blog-post-item'
-import { BlogTemplate } from '@/presentation/components/templates'
+import { BlogTemplate } from '@/presentation/components/templates/BlogTemplate'
 
 const posts: BlogPostItem[] = [
   {

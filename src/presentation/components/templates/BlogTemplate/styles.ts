@@ -1,5 +1,5 @@
-import { styled } from '@/presentation/styles/stitches.config'
-import { PostItem as PostItemComponent } from '../molecules/PostItem'
+import { styled } from '@/presentation/styles/stitches.config.ts'
+import { PostItem as PostItemComponent } from '../../molecules/PostItem'
 
 export const Container = styled('main', {
   display: 'flex',

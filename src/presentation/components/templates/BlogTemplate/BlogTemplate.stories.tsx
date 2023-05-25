@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BlogTemplate, BlogTemplateProps } from './'
+import { BlogTemplate, type BlogTemplateProps } from './'
 import { BrowserRouter } from 'react-router-dom'
-import { Header } from '../organisms/Header'
+import { Header } from '../../organisms/Header'
 
 export default {
   title: 'Templates/BlogTemplate',
