@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  cms-webapp:
+    build: .
+    container_name: alto-cms-webapp
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/usr/src/alto-io-challenge
+    command: sh -c "npm i && npm run dev -- --host"
+  cms-webapp-docs:
+    build: .
+    container_name: alto-cms-webapp-docs
+    ports:
+      - 6006:6006
+    volumes:
+      - .:/usr/src/alto-io-challenge
+    depends_on:
+      - cms-webapp
+    command: sh -c "npm run storybook"
