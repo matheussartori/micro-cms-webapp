@@ -15,7 +15,8 @@ export default {
     }
   ],
   args: {
-    children: 'Lorem ipsum'
+    children: 'Lorem ipsum',
+    to: '/'
   },
   argTypes: {
     css: {
@@ -26,11 +27,6 @@ export default {
     as: {
       control: {
         type: null
-      }
-    },
-    active: {
-      control: {
-        type: 'boolean'
       }
     }
   }

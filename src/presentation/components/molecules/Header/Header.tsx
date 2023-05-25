@@ -11,7 +11,7 @@ export function Header() {
           <MenuItem to="/">Home</MenuItem>
           <MenuItem to="/about">About</MenuItem>
           <MenuItem to="/blog">Blog</MenuItem>
-          <MenuItem to="/contact">Contato</MenuItem>
+          <MenuItem to="/contact">Contact</MenuItem>
         </Navigation>
       </Content>
     </Container>

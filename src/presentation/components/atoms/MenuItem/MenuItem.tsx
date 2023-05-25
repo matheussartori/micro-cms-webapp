@@ -1,12 +1,12 @@
 import { styled } from '@/presentation/styles/stitches.config'
 import { ComponentProps } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export interface MenuItemProps extends ComponentProps<typeof MenuItem> {
   children: string
 }
 
-export const MenuItem = styled(Link, {
+export const MenuItem = styled(NavLink, {
   fontFamily: '$default',
   display: 'inline-block',
   cursor: 'pointer',
@@ -26,23 +26,19 @@ export const MenuItem = styled(Link, {
     color: '$white'
   },
 
-  variants: {
-    active: {
-      true: {
-        color: '$white',
-        fontWeight: 'bold',
+  '&.active': {
+    color: '$white',
+    fontWeight: 'bold',
 
-        '&::after': {
-          content: '',
-          height: '3px',
-          borderRadius: '3px 3px 0 0',
-          width: '100%',
-          position: 'absolute',
-          bottom: '1px',
-          left: 0,
-          backgroundColor: '$yellow500'
-        }
-      }
+    '&::after': {
+      content: '',
+      height: '3px',
+      borderRadius: '3px 3px 0 0',
+      width: '100%',
+      position: 'absolute',
+      bottom: '1px',
+      left: 0,
+      backgroundColor: '$yellow500'
     }
   }
 })
