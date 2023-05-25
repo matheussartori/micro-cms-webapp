@@ -8,7 +8,7 @@ const Providers = ({ children }: { children: ReactNode }) => (
   </BrowserRouter>
 )
 
-export const renderWithProviders = (ui: ReactElement, options?: RenderOptions) => {
+export const renderWithBrowserRouter = (ui: ReactElement, options?: RenderOptions) => {
   render(ui, {
     wrapper: Providers,
     ...options
@@ -16,4 +16,3 @@ export const renderWithProviders = (ui: ReactElement, options?: RenderOptions) =
 }
 
 export * from '@testing-library/react'
-export { renderWithProviders as render }

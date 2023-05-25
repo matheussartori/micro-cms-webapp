@@ -22,6 +22,7 @@ export const {
       gray900: '#121214',
 
       cyan500: '#61dafb',
+      cyan300: '#7ddbf5',
       yellow500: '#eba417'
     },
 
