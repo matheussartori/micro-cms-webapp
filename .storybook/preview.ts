@@ -1,14 +1,13 @@
 import type { Preview } from "@storybook/react";
+import { globalStyles } from '../src/presentation/styles/global'
+
+globalStyles()
 
 const preview: Preview = {
   parameters: {
     backgrounds: {
       default: 'dark',
       values: [
-        {
-          name: 'light',
-          value: '#f8f8f8'
-        },
         {
           name: 'dark',
           value: '#121214'
