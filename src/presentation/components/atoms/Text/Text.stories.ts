@@ -19,11 +19,6 @@ export default {
         type: null
       }
     },
-    active: {
-      control: {
-        type: 'boolean'
-      }
-    },
     size: {
       options: [
         'xs',
