@@ -1,17 +1,14 @@
 import { BlogPost } from '@/data/models/blog-post'
-import { Container, HtmlContainer } from './styles'
-import { Text } from '../../atoms/Text'
+import { Container, HtmlContainer, Time, Title } from './styles'
 
-export interface PostProps {
-  post: BlogPost
-}
+export type PostProps = BlogPost
 
-export function Post({ post }: PostProps) {
+export function Post({ title, time, content }: PostProps) {
   return (
     <Container>
-      <Text as="h1">{post.title}</Text>
-      <Text as="time">{post.time}</Text>
-      <HtmlContainer dangerouslySetInnerHTML={{ __html: post.content }} />
+      <Title as="h1">{title}</Title>
+      <Time as="time">{time}</Time>
+      <HtmlContainer dangerouslySetInnerHTML={{ __html: content }} />
     </Container>
   )
 }

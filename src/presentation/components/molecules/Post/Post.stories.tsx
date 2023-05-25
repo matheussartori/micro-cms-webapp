@@ -5,12 +5,10 @@ export default {
   title: 'Molecules/Post',
   component: Post,
   args: {
-    post: {
-      content: '<p>Content</p>',
-      id: 'any',
-      time: 'anyt',
-      title: 'amy'
-    }
+    content: '<p>Content goes here</p>',
+    id: 'any',
+    time: 'May 25, 2023',
+    title: 'Lorem Ipsum'
   }
 } as Meta<PostProps>
 
