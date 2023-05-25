@@ -5,7 +5,7 @@ import { TextInput } from './'
 
 describe('TextInput Component', () => {
   it('should render with correct props', () => {
-    render(<TextInput value="lorem ipsum" />)
+    render(<TextInput defaultValue="lorem ipsum" />)
 
     const textInput = screen.getByDisplayValue(/lorem ipsum/i)
 
