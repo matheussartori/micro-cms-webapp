@@ -16,15 +16,13 @@ export default {
     }
   ],
   args: {
+    id: 'any_id',
     time: '25 May, 2023',
     title: 'Title',
-    shortContent: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo expedita esse veniam illo placeat dicta, voluptatibus exercitationem possimus iste pariatur culpa iure, distinctio officia harum sapiente dolorem? Ab, sunt.',
-    post: {
-      id: 'any_id'
-    }
+    shortContent: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo expedita esse veniam illo placeat dicta, voluptatibus exercitationem possimus iste pariatur culpa iure, distinctio officia harum sapiente dolorem? Ab, sunt.'
   },
   argTypes: {
-    post: {
+    id: {
       control: {
         type: null
       }

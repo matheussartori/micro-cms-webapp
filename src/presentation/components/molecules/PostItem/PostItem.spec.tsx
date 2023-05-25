@@ -9,12 +9,10 @@ describe('PostItem Component', () => {
   it('should render with correct params', () => {
     renderWithBrowserRouter(
       <PostItem
+        id="any_id"
         time="25 May, 2023"
         title="Title"
         shortContent="Short content"
-        post={{
-          id: 'any_id'
-        }}
       />
     )
 
@@ -35,12 +33,10 @@ describe('PostItem Component', () => {
     render(
       <Router location={history.location} navigator={history}>
         <PostItem
+          id="any_id"
           time="25 May, 2023"
           title="Title"
           shortContent="Short content"
-          post={{
-            id: 'any_id'
-          }}
         />
       </Router>
     )

@@ -1,21 +1,16 @@
 import { ComponentProps } from 'react'
-import { Container, ShortContent, Time, Title } from './styles'
 import { Link } from 'react-router-dom'
 
-export interface PostItemProps extends ComponentProps<typeof Container> {
-  time: string
-  title: string
-  shortContent: string
-  post: {
-    id: string
-  }
-}
+import { BlogPostItem } from '@/data/models/blog-post-item'
+import { Container, ShortContent, Time, Title } from './styles'
 
-export function PostItem({ time, title, shortContent, post, ...props}: PostItemProps) {
+export type PostItemProps = ComponentProps<typeof Container> & BlogPostItem
+
+export function PostItem({ time, title, shortContent, id, ...props}: PostItemProps) {
   return (
     <Container {...props}>
       <Time as="time">{time}</Time>
-      <Link to={`/blog/read/${post.id}`}>
+      <Link to={`/blog/read/${id}`}>
         <Title as="h2">{title}</Title>
       </Link>
       <ShortContent>{shortContent}</ShortContent>
