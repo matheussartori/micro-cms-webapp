@@ -8,7 +8,7 @@ export type PostItemProps = ComponentProps<typeof Container> & BlogPostItem
 
 export function PostItem({ time, title, shortContent, id, ...props}: PostItemProps) {
   return (
-    <Container {...props}>
+    <Container data-testid="blog-post-item" {...props}>
       <Time as="time">{time}</Time>
       <Link to={`/blog/read/${id}`}>
         <Title as="h2">{title}</Title>

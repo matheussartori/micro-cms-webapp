@@ -4,7 +4,7 @@ import { Container } from './styles'
 
 export function SearchBar() {
   return (
-    <Container>
+    <Container data-testid="searchbar">
       <TextInput containerCss={{ borderTopRightRadius: 0, borderBottomRightRadius: 0 }} />
       <Button css={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}>Search</Button>
     </Container>

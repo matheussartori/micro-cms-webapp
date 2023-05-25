@@ -14,7 +14,7 @@ export function BlogTemplate({ posts }: BlogTemplateProps) {
           id={post.id}
           title={post.title}
           shortContent={post.shortContent}
-          time={post.title}
+          time={post.time}
         />
       ))}
     </Container>

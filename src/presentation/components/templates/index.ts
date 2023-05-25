@@ -1,1 +1,1 @@
-export { BlogTemplate } from './BlogTemplate'
+export { BlogTemplate, type BlogTemplateProps } from './BlogTemplate'

@@ -5,7 +5,7 @@ import { Container, Content, Navigation } from './styles'
 
 export function Header() {
   return (
-    <Container>
+    <Container data-testid="header">
       <Content>
         <Logo />
         <Navigation>
