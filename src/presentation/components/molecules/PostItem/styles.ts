@@ -1,7 +1,16 @@
 import { styled } from '@/presentation/styles/stitches.config'
 import { Text } from '../../atoms/Text'
+import { Panel } from '../../atoms/Panel'
 
-export const Time = styled(Text, {})
+export const Container = styled(Panel, {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.5rem'
+})
+
+export const Time = styled(Text, {
+  marginBottom: '0.5rem'
+})
 
 export const Title = styled(Text, {})
 
