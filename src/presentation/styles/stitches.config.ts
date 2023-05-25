@@ -30,6 +30,10 @@ export const {
       lg: '1.25rem',
       xl: '1.5rem',
       '2xl': '2rem'
+    },
+
+    fonts: {
+      default: 'Roboto, sans-serif'
     }
   }
 })
