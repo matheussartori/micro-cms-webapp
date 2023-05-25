@@ -1,10 +1,8 @@
 import { styled } from '@/presentation/styles/stitches.config'
-import { ComponentProps, ElementType, ReactNode } from 'react'
+import { ComponentProps } from 'react'
 
 export interface MenuItemProps extends ComponentProps<typeof MenuItem> {
-  children: ReactNode
-  size: 'xs' | 'sm' | 'md' | 'lg' |'xl'
-  as?: ElementType
+  children: string
 }
 
 export const MenuItem = styled('p', {
@@ -27,13 +25,6 @@ export const MenuItem = styled('p', {
   },
 
   variants: {
-    size: {
-      xs: { fontSize: '$xs' },
-      sm: { fontSize: '$sm' },
-      md: { fontSize: '$md' },
-      lg: { fontSize: '$lg' },
-      xl: { fontSize: '$xl' }
-    },
     active: {
       true: {
         color: '$white',

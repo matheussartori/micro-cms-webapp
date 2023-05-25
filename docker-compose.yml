@@ -15,6 +15,13 @@ services:
       - 6006:6006
     volumes:
       - .:/usr/src/alto-io-challenge
+    links:
+      - cms-webapp
     depends_on:
       - cms-webapp
-    command: sh -c "npm run storybook"
+    command: sh -c "/wait; npm run storybook"
+    environment:
+      - WAIT_HOSTS=cms-webapp:5173
+      - WAIT_HOSTS_TIMEOUT=600
+      - WAIT_SLEEP_INTERVAL=5
+      - WAIT_HOST_CONNECT_TIMEOUT=15

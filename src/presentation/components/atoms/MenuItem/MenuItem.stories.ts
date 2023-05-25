@@ -5,15 +5,9 @@ export default {
   title: 'Atoms/MenuItem',
   component: MenuItem,
   args: {
-    size: 'md',
     children: 'Lorem ipsum'
   },
   argTypes: {
-    as: {
-      control: {
-        type: null
-      }
-    },
     css: {
       control: {
         type: null
@@ -23,27 +17,8 @@ export default {
       control: {
         type: 'boolean'
       }
-    },
-    size: {
-      options: [
-        'xs',
-        'sm',
-        'md',
-        'lg',
-        'xl'
-      ],
-      control: {
-        type: 'inline-radio'
-      }
     }
   }
 } as Meta<MenuItemProps>
 
-export const Primary: StoryObj<MenuItemProps> = {}
-
-export const CustomTag: StoryObj<MenuItemProps> = {
-  args: {
-    children: 'Strong text',
-    as: 'strong'
-  }
-}
+export const Default: StoryObj<MenuItemProps> = {}

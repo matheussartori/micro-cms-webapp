@@ -12,8 +12,10 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "test": "vitest watch",
     "test:ci": "vitest run",
     "test:coverage": "vitest run --coverage",
+    "test:browser": "vitest watch --browser",
     "docker:up": "docker compose up --build -d",
     "docker:down": "docker compose down --rmi 'all' --volumes",
     "docker:restart": "docker compose restart",
@@ -45,6 +47,7 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/browser": "^0.31.1",
     "@vitest/coverage-c8": "^0.31.1",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -58,6 +61,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-tsconfig-paths": "^4.2.0",
-    "vitest": "^0.31.1"
+    "vitest": "^0.31.1",
+    "webdriverio": "^8.10.5"
   }
 }
