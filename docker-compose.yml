@@ -2,19 +2,19 @@ version: '3.9'
 services:
   cms-webapp:
     build: .
-    container_name: alto-cms-webapp
+    container_name: micro-cms-webapp
     ports:
       - 5173:5173
     volumes:
-      - .:/usr/src/alto-io-challenge
+      - .:/usr/src/micro-cms
     command: sh -c "npm i && npm run dev -- --host"
   cms-webapp-docs:
     build: .
-    container_name: alto-cms-webapp-docs
+    container_name: micro-cms-webapp-docs
     ports:
       - 6006:6006
     volumes:
-      - .:/usr/src/alto-io-challenge
+      - .:/usr/src/micro-cms
     links:
       - cms-webapp
     depends_on:

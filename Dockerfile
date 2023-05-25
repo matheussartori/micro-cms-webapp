@@ -1,5 +1,5 @@
 FROM node:18-alpine
-WORKDIR /usr/src/alto-io-challenge
+WORKDIR /usr/src/micro-cms
 COPY package.json ./
 COPY package-lock.json ./
 COPY . .

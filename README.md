@@ -1,4 +1,4 @@
-# Alto.io Challenge
+# Micro CMS
 
 ## How tu run locally
 

@@ -4,7 +4,7 @@ import { LogoImg } from './styles'
 export function Logo() {
   return (
     <div>
-      <LogoImg data-testid="logo" src={logoImg} alt="Alto CMS" />
+      <LogoImg data-testid="logo" src={logoImg} alt="Micro CMS" />
     </div>
   )
 }
