@@ -1,5 +1,24 @@
 # Alto.io Challenge
 
+## How tu run locally
+
+You can run the micro CMS using docker:
+
+```bash
+docker compose up --build -d # Runs the micro CMS and storybook.
+# or, in case that you have node installed
+npm run docker:up
+```
+
+The micro CMS will run on the port `5173`, while the storybook will run on `6006`.
+
+If you don't have docker or want to run directly via node, you can install the dependencies and run the application, or, the storybook.
+
+```bash
+npm install # Install the dependencies
+npm run dev # Start the micro CMS
+npm run storybook # Start the storybook
+```
 ## Site structure
 For the micro CMS, I've considered the structure (templates) for the website based on the following wireframes:
 
