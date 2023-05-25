@@ -37,8 +37,8 @@ For the micro CMS, I've considered the structure (templates) for the website bas
 ### Blog post create/edit
 <img src="./.github/assets/wireframes/blog-post-edit.png" alt="Blog Post Edit">
 
-### About
-<img src="./.github/assets/wireframes/about.png" alt="About">
+### Contact
+<img src="./.github/assets/wireframes/contact.png" alt="Contact">
 
 ## Why vite?
 
