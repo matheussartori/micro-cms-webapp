@@ -8,5 +8,11 @@ export const Image = styled('img', {
 })
 
 export const PanelContainer = styled(Panel, {
-  padding: '2rem'
+  padding: 5,
+  borderRadius: 14,
+  overflow: 'hidden',
+  backgroundColor: '$gray700',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
 })

@@ -14,7 +14,7 @@ export const Grid = styled('div', {
   margin: '2rem',
   display: 'flex',
   flexWrap: 'wrap',
-  gap: '1.5rem',
+  gap: '3rem',
   justifyContent: 'center'
 })
 
