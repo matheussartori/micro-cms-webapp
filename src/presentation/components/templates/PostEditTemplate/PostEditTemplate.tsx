@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { FloppyDisk } from '@phosphor-icons/react'
 
-import { Box, Container } from './styles'
+import { Box, Container, Label } from './styles'
 import { TextInput } from '../../atoms/TextInput'
 import { Text } from '../../atoms/Text'
 import { Button } from '../../atoms/Button'
@@ -39,13 +39,13 @@ export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplat
   return (
     <Container onSubmit={handleSubmit}>
       <Box>
-        <Text as="h2">Title</Text>
-        <TextInput ref={titleRef} defaultValue={title ?? ''} required />
+        <Label as="label" htmlFor="title">Title</Label>
+        <TextInput ref={titleRef} id="title" defaultValue={title ?? ''} required />
       </Box>
 
       <Box>
-        <Text as="h2">Content</Text>
-        <TextArea ref={contentRef} defaultValue={content ?? ''} required />
+        <Label as="label" htmlFor="content">Content</Label>
+        <TextArea ref={contentRef} id="content" defaultValue={content ?? ''} required />
       </Box>
 
       <Button data-testid="button-save-post">
