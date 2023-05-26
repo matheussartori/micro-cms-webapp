@@ -13,3 +13,9 @@ export default {
 } as Meta<HeroProps>
 
 export const Default: StoryObj<HeroProps> = {}
+
+export const Secondary: StoryObj<HeroProps> = {
+  args: {
+    secondary: true
+  }
+}

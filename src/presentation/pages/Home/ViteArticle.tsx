@@ -1,10 +1,12 @@
 import { Hero } from '@/presentation/components/atoms/Hero'
 import { Text } from '@/presentation/components/atoms/Text'
 import vitestHeroImg from '@/presentation/assets/vitest.jpg'
+import { ArticleContainer, ArticleTitle } from './styles'
 
 export function ViteArticle() {
   return (
-    <div>
+    <ArticleContainer>
+      <ArticleTitle>Why you should use Vitest instead of Jest</ArticleTitle>
       <Text>
         Given Jest's massive adoption, Vitest provides a compatible API that allows you to use it as a drop-in
         replacement in most projects. It also includes the most common features required when setting up your
@@ -14,7 +16,7 @@ export function ViteArticle() {
         Even with all these improvements in DX, Vitest stays lightweight by carefully choosing its dependencies
         (or directly inlining needed pieces).
       </Text>
-      <Hero src={vitestHeroImg} />
-    </div>
+      <Hero secondary src={vitestHeroImg} />
+    </ArticleContainer>
   )
 }

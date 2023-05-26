@@ -1,3 +1,4 @@
+import { Text } from '@/presentation/components/atoms/Text'
 import { styled } from '@/presentation/styles/stitches.config'
 
 export const VideoWrapper = styled('div', {
@@ -13,4 +14,16 @@ export const VideoIFrame = styled('iframe', {
   left: 0,
   width: '100%',
   height: '100%'
+})
+
+export const ArticleContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '2rem'
+})
+
+export const ArticleTitle = styled(Text, {
+  color: '$gray100',
+  fontWeight: 500,
+  fontSize: '$lg'
 })
