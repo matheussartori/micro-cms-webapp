@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { TextInput, TextInputProps } from './'
+import { TextArea, TextAreaProps } from './'
 
 export default {
-  title: 'Atoms/TextInput',
-  component: TextInput,
+  title: 'Atoms/TextArea',
+  component: TextArea,
   args: {
     placeholder: 'Type something here...'
   },
@@ -17,13 +17,8 @@ export default {
       control: {
         type: null
       }
-    },
-    containerCss: {
-      control: {
-        type: null
-      }
     }
   }
-} as Meta<TextInputProps>
+} as Meta<TextAreaProps>
 
-export const Default: StoryObj<TextInputProps> = {}
+export const Default: StoryObj<TextAreaProps> = {}
