@@ -3,7 +3,6 @@ import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
 import { ContactTemplate } from './'
 
-
 describe('ContactTemplate Component', () => {
   it('should render the children correctly', () => {
     renderWithBrowserRouter(

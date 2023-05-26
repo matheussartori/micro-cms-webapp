@@ -1,1 +1,1 @@
-export { HomeTemplate } from './HomeTemplate'
+export { HomeTemplate, type HomeTemplateProps } from './HomeTemplate'
