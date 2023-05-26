@@ -32,10 +32,10 @@ For the micro CMS, I've considered the structure (templates) for the website bas
 <img src="./.github/assets/wireframes/blog.png" alt="Blog">
 
 ### Blog post
-<img src="./.github/assets/wireframes/blog-post.png" alt="Blog Post">
+<img src="./.github/assets/wireframes/blog-post.png" alt="Blog PostModel">
 
 ### Blog post create/edit
-<img src="./.github/assets/wireframes/blog-post-edit.png" alt="Blog Post Edit">
+<img src="./.github/assets/wireframes/blog-post-edit.png" alt="Blog PostModel Edit">
 
 ### Contact
 <img src="./.github/assets/wireframes/contact.png" alt="Contact">

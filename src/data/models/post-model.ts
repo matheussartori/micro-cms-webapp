@@ -1,4 +1,4 @@
-export interface BlogPost {
+export interface PostModel {
   id: string
   time: string
   title: string

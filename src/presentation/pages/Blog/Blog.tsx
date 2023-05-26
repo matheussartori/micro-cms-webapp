@@ -1,9 +1,9 @@
-import { BlogPost } from '@/data/models/blog-post'
+import { PostModel } from '@/data/models/post-model.ts'
 import { BlogTemplate } from '@/presentation/components/templates/BlogTemplate'
 import { useLocalStorageState } from '@/presentation/hooks/useLocalStorageState'
 
 export function Blog() {
-  const [posts] = useLocalStorageState<BlogPost[]>('@microcms/posts', [
+  const [posts] = useLocalStorageState<PostModel[]>('@microcms/posts', [
     {
       id: '14f05b98-8733-49fe-8cdb-f7bf71d8afbf',
       content: '1',

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 import { Post } from './Post'
 
-describe('Post Component', () => {
+describe('PostModel Component', () => {
   it('should render with correct props', () => {
     renderWithBrowserRouter(
       <Post

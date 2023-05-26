@@ -1,8 +1,8 @@
-import { BlogPost } from '@/data/models/blog-post'
+import { PostModel } from '@/data/models/post-model.ts'
 import { Container } from './styles'
 import { Post } from '../../molecules/Post'
 
-export type PostTemplateProps = BlogPost
+export type PostTemplateProps = PostModel
 
 export function PostTemplate({ id, content, time, title }: PostTemplateProps) {
   return (

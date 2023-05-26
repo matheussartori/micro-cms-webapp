@@ -2,11 +2,11 @@ import { ComponentProps } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Container, ShortContent, Time, Title } from './styles'
-import { BlogPost } from '@/data/models/blog-post'
+import { PostModel } from '@/data/models/post-model.ts'
 
-export type PostItemProps = ComponentProps<typeof Container> & BlogPost
+export type PostSummaryProps = ComponentProps<typeof Container> & PostModel
 
-export function PostItem({ time, title, content, id, ...props}: PostItemProps) {
+export function PostSummary({ time, title, content, id, ...props}: PostSummaryProps) {
   let contentWithoutHTMLTags = content.replace(/(<([^>]+)>)/gi, '')
   let isContentSliced = false
 

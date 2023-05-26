@@ -1,8 +1,8 @@
-import { BlogPost } from '@/data/models/blog-post.ts'
+import { PostModel } from '@/data/models/post-model.ts'
 import { Container, PostItem } from './styles.ts'
 
 export interface BlogTemplateProps {
-  posts: BlogPost[]
+  posts: PostModel[]
 }
 
 export function BlogTemplate({ posts }: BlogTemplateProps) {

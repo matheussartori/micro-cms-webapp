@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { PostItem } from './'
-import { PostItemProps } from './PostItem'
+import { PostSummary, type PostSummaryProps } from './'
 import { BrowserRouter } from 'react-router-dom'
 
 export default {
-  title: 'Molecules/PostItem',
-  component: PostItem,
+  title: 'Molecules/PostSummary',
+  component: PostSummary,
   decorators: [
     (Story) => {
       return (
@@ -28,6 +27,6 @@ export default {
       }
     }
   }
-} as Meta<PostItemProps>
+} as Meta<PostSummaryProps>
 
-export const Default: StoryObj<PostItemProps> = {}
+export const Default: StoryObj<PostSummaryProps> = {}

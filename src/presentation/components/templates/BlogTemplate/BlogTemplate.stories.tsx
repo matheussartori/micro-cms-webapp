@@ -20,7 +20,7 @@ export default {
     posts: [
       {
         id: 'any_id',
-        shortContent: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga autem aperiam quis, consequatur commodi cupiditate beatae earum tenetur illo molestiae debitis molestias eveniet. Itaque, aliquam dolorem. Optio, quis...',
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga autem aperiam quis, consequatur commodi cupiditate beatae earum tenetur illo molestiae debitis molestias eveniet. Itaque, aliquam dolorem. Optio, quis...',
         time: 'May 25, 2023',
         title: 'Lorem Ipsum'
       }

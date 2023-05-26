@@ -1,10 +1,10 @@
-import { BlogPost } from '@/data/models/blog-post'
+import { PostModel } from '@/data/models/post-model.ts'
 import { Actions, Container, HtmlContainer, Time, Title } from './styles'
 import { Button } from '../../atoms/Button'
 import { Link } from 'react-router-dom'
 import { PencilSimple } from '@phosphor-icons/react'
 
-export type PostProps = BlogPost
+export type PostProps = PostModel
 
 export function Post({ id, title, time, content }: PostProps) {
   return (

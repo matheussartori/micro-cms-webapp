@@ -1,14 +1,14 @@
 import { describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
-import { PostItem } from './'
+import { PostSummary } from './'
 import { createMemoryHistory } from 'history'
 import { Router } from 'react-router-dom'
 
-describe('PostItem Component', () => {
+describe('PostSummary Component', () => {
   it('should render with correct params', () => {
     renderWithBrowserRouter(
-      <PostItem
+      <PostSummary
         id="any_id"
         time="25 May, 2023"
         title="Title"
@@ -16,13 +16,13 @@ describe('PostItem Component', () => {
       />
     )
 
-    const postItemByTime = screen.getByText(/25 May, 2023/i)
-    const postItemByTitle = screen.getByText(/title/i)
-    const postItemByShortContent = screen.getByText(/short content/i)
+    const postSummaryByTime = screen.getByText(/25 May, 2023/i)
+    const postSummaryByTitle = screen.getByText(/title/i)
+    const postSummaryByShortContent = screen.getByText(/short content/i)
 
-    expect(postItemByTime).toBeDefined()
-    expect(postItemByTitle).toBeDefined()
-    expect(postItemByShortContent).toBeDefined()
+    expect(postSummaryByTime).toBeDefined()
+    expect(postSummaryByTitle).toBeDefined()
+    expect(postSummaryByShortContent).toBeDefined()
   })
 
   it('should redirect to correct post page when click on title', () => {
@@ -32,7 +32,7 @@ describe('PostItem Component', () => {
 
     render(
       <Router location={history.location} navigator={history}>
-        <PostItem
+        <PostSummary
           id="any_id"
           time="25 May, 2023"
           title="Title"
@@ -41,9 +41,9 @@ describe('PostItem Component', () => {
       </Router>
     )
 
-    const postItem = screen.getByText(/title/i)
+    const postSummary = screen.getByText(/title/i)
 
-    fireEvent.click(postItem)
+    fireEvent.click(postSummary)
 
     expect(history.push).toHaveBeenCalledWith({
       hash: '',
