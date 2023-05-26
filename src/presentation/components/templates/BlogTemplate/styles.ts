@@ -6,7 +6,8 @@ export const Container = styled('main', {
   flexDirection: 'column',
   gap: '3rem',
   maxWidth: 1120,
-  margin: '5rem auto'
+  margin: '5rem auto',
+  padding: '0 2rem'
 })
 
 export const Actions = styled('div', {

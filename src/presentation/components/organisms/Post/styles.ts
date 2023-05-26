@@ -5,7 +5,8 @@ export const Container = styled('article', {
   maxWidth: 1120,
   display: 'flex',
   flexDirection: 'column',
-  margin: '0 auto'
+  margin: '0 auto',
+  padding: '0 2rem'
 })
 
 export const Title = styled(Text, {
