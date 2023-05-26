@@ -3,7 +3,7 @@ import { Text } from '../../atoms/Text'
 import { PanelIcon } from '../../molecules/PanelIcon'
 import { Container } from './styles'
 
-type Tech = {
+export type Tech = {
   externalUrl: string
   image: string
 }
