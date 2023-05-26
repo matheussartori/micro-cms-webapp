@@ -1,7 +1,7 @@
 import { ReactElement, ReactNode } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { render, RenderOptions } from '@testing-library/react'
-import { PostProvider } from './presentation/context/PostContext'
+import { PostProvider } from '../src/presentation/context/PostContext'
 
 const Providers = ({ children }: { children: ReactNode }) => (
   <PostProvider>
