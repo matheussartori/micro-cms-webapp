@@ -43,3 +43,20 @@ export const Navigation = styled('nav', {
   marginLeft: '5rem',
   height: '5rem'
 })
+
+export const MenuButton = styled('button', {
+  lineHeight: 0,
+  backgroundColor: 'transparent',
+  border: 0
+})
+
+export const MobileNavigation = styled('nav', {
+  display: 'none',
+  position: 'fixed',
+  top: '5rem',
+  bottom: 0,
+  left: 0,
+  right: 0,
+  height: 'calc(100vh - 5rem)',
+  backgroundColor: 'red'
+})
