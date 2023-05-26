@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 
 export type CreatePostParams = Omit<PostModel, 'id'>
 
-export type UpdatePostParams = PostModel
+export type UpdatePostParams = Omit<PostModel, 'time'>
 
 export interface PostContextData {
   posts: PostModel[]

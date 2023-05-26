@@ -9,8 +9,6 @@ export const Container = styled('article', {
 })
 
 export const Title = styled(Text, {
-  width: '100%',
-  textAlign: 'center',
   color: '$gray100',
   fontSize: '$3xl',
   fontWeight: 700

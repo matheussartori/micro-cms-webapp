@@ -1,13 +1,26 @@
+import { useNavigate, useParams } from 'react-router-dom'
+
+import { PostModel } from '@/data/models/post-model'
 import { PostEditTemplate } from '@/presentation/components/templates/PostEditTemplate'
 import { usePost } from '@/presentation/hooks/usePost'
-import { useParams } from 'react-router-dom'
 
 export function PostEdit() {
   const { postId } = useParams()
+  const navigate = useNavigate()
 
-  const { findPostById } = usePost()
+  const { findPostById, updatePost } = usePost()
 
   const post = findPostById(String(postId))
+
+  function handleEditPost(post: Omit<PostModel, 'time'>) {
+    updatePost({
+      id: post.id,
+      content: post.content,
+      title: post.title
+    })
+
+    navigate(`/blog/read/${post.id}`)
+  }
 
   return (
     <PostEditTemplate
@@ -15,6 +28,7 @@ export function PostEdit() {
       content={post.content}
       time={post.time}
       title={post.title}
+      onSave={handleEditPost}
     />
   )
 }

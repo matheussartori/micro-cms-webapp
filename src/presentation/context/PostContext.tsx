@@ -3,8 +3,7 @@ import { v4 as uuid } from 'uuid'
 
 import { PostModel } from '@/data/models/post-model'
 import { useLocalStorageState } from '@/presentation/hooks/useLocalStorageState'
-import { CreatePostParams, PostContextData, PostProviderProps } from './PostContent'
-import { UpdatePostParams } from './PostContent'
+import { CreatePostParams, PostContextData, PostProviderProps, UpdatePostParams } from './types'
 
 export const PostContext = createContext<PostContextData>({} as PostContextData)
 
@@ -45,7 +44,7 @@ export function PostProvider({ children }: PostProviderProps) {
     setPosts([...posts, post])
   }
 
-  function updatePost({ id, content, time, title }: UpdatePostParams): void {
+  function updatePost({ id, content, title }: UpdatePostParams): void {
     const postExists = findPostById(id)
 
     if (!postExists) {
@@ -57,7 +56,6 @@ export function PostProvider({ children }: PostProviderProps) {
         return {
           ...post,
           content,
-          time,
           title
         }
       }
