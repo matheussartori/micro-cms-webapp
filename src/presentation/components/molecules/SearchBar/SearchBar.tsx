@@ -40,13 +40,18 @@ export function SearchBar() {
           control: (baseStyles) => ({
             ...baseStyles,
             width: 194,
-            height: 35
+            height: 35,
+            minHeight: 35,
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+            borderTopLeftRadius: 6,
+            borderBottomLeftRadius: 6
           })
         }}
         options={options}
         inputValue={searchTerm}
         onInputChange={(e) => setSearchTerm(e)}
-        placeholder="Search for blog posts..."
+        placeholder="Search for posts..."
         onChange={handleOnChange}
         value={null}
       />
