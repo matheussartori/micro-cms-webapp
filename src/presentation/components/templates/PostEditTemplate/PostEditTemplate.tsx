@@ -40,12 +40,12 @@ export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplat
     <Container onSubmit={handleSubmit}>
       <Box>
         <Text as="h2">Title</Text>
-        <TextInput ref={titleRef} defaultValue={title ?? ''} />
+        <TextInput ref={titleRef} defaultValue={title ?? ''} required />
       </Box>
 
       <Box>
         <Text as="h2">Content</Text>
-        <TextArea ref={contentRef} defaultValue={content ?? ''} />
+        <TextArea ref={contentRef} defaultValue={content ?? ''} required />
       </Box>
 
       <Button data-testid="button-save-post">
