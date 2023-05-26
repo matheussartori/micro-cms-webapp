@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, renderWithBrowserRouter, screen } from '@/tests/test-utils'
 import { createMemoryHistory } from 'history'
 
-import { MenuItem } from './MenuItem.tsx'
+import { MenuItem } from './MenuItem'
 import { Router } from 'react-router-dom'
 
 describe('MenuItem Component', () => {

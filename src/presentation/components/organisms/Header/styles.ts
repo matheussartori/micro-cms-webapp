@@ -16,7 +16,8 @@ export const Content = styled('div', {
   padding: '0 2rem',
 
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
+  justifyContent: 'space-between'
 })
 
 export const Navigation = styled('nav', {

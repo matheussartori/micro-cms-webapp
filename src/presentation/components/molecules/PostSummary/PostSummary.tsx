@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Container, ShortContent, Time, Title } from './styles'
-import { PostModel } from '@/data/models/post-model.ts'
+import { PostModel } from '@/data/models/post-model'
 import { format } from 'date-fns'
 
 export type PostSummaryProps = ComponentProps<typeof Container> & PostModel

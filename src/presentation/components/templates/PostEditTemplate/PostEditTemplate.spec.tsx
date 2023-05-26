@@ -1,5 +1,5 @@
 import { Mock, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
+import { fireEvent, renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
 import { PostEditTemplate } from './'
 

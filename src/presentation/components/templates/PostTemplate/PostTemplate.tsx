@@ -1,4 +1,4 @@
-import { PostModel } from '@/data/models/post-model.ts'
+import { PostModel } from '@/data/models/post-model'
 import { Container } from './styles'
 import { Post } from '../../organisms/Post'
 

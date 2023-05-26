@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
+import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
 import { BlogTemplate } from './'
 

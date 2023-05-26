@@ -1,1 +1,1 @@
-export { Post, type PostProps } from './Post.tsx'
+export { Post, type PostProps } from './Post'

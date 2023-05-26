@@ -1,6 +1,6 @@
-import { PostModel } from '@/data/models/post-model.ts'
-import { Actions, Container, PostItem } from './styles.ts'
-import { Button } from '../../atoms/Button/Button.tsx'
+import { PostModel } from '@/data/models/post-model'
+import { Actions, Container, PostItem } from './styles'
+import { Button } from '../../atoms/Button'
 import { Plus } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 

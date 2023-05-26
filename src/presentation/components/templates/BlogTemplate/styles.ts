@@ -1,4 +1,4 @@
-import { styled } from '@/presentation/styles/stitches.config.ts'
+import { styled } from '@/presentation/styles/stitches.config'
 import { PostSummary as PostItemComponent } from '../../molecules/PostSummary'
 
 export const Container = styled('main', {

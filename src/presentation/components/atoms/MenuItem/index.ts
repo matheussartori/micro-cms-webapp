@@ -1,1 +1,1 @@
-export { MenuItem, type MenuItemProps } from './MenuItem.tsx'
+export { MenuItem, type MenuItemProps } from './MenuItem'
