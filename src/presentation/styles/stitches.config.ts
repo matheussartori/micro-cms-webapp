@@ -22,7 +22,7 @@ export const {
       gray300: '#a8a8b3',
       gray700: '#323238',
       gray800: '#29292e',
-      gray850: '#1f2729',
+      gray850: '#1e1e21',
       gray900: '#121214',
 
       cyan500: '#61dafb',
