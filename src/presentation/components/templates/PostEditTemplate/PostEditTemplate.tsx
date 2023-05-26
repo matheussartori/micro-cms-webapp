@@ -16,7 +16,6 @@ export interface OnSaveParams {
 export interface PostEditTemplateProps {
   onSave: (data: OnSaveParams) => void
   id?: string
-  time?: string
   title?: string
   content?: string
 }
@@ -47,7 +46,7 @@ export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplat
         <TextInput ref={contentRef} defaultValue={content ?? ''} />
       </Box>
 
-      <Button>
+      <Button data-testid="button-save-post">
         <FloppyDisk />
         Save Post
       </Button>

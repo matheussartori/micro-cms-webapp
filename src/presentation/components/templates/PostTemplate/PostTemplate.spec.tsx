@@ -3,7 +3,7 @@ import { renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
 
 import { PostTemplate } from './'
 
-describe('BlogTemplate Component', () => {
+describe('PostTemplate Component', () => {
   it('should render correctly', () => {
     renderWithBrowserRouter(
       <PostTemplate
