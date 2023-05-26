@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementRef, forwardRef } from 'react'
 import { Container, Input } from './styles'
 import { CSS } from '@stitches/react'
 
@@ -6,10 +6,12 @@ export interface TextInputProps extends ComponentProps<typeof Input> {
   containerCss?: CSS
 }
 
-export function TextInput({ containerCss, ...props }: TextInputProps) {
-  return (
-    <Container css={containerCss}>
-      <Input {...props} />
-    </Container>
-  )
-}
+export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
+  ({ containerCss, ...props }: TextInputProps, ref) => {
+    return (
+      <Container css={containerCss}>
+        <Input ref={ref} {...props} />
+      </Container>
+    )
+  }
+)

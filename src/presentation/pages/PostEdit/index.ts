@@ -1,1 +1,1 @@
-export { PostEdit } from './BlogPostEdit'
+export { PostEdit } from './PostEdit'
