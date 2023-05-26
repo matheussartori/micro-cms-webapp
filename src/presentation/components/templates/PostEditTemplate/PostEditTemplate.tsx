@@ -5,6 +5,7 @@ import { Box, Container } from './styles'
 import { TextInput } from '../../atoms/TextInput'
 import { Text } from '../../atoms/Text'
 import { Button } from '../../atoms/Button'
+import { TextArea } from '../../atoms/TextArea'
 
 export interface OnSaveParams {
   id?: string
@@ -23,7 +24,7 @@ export interface PostEditTemplateProps {
 
 export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplateProps) {
   const titleRef = useRef<HTMLInputElement>(null)
-  const contentRef = useRef<HTMLInputElement>(null)
+  const contentRef = useRef<HTMLTextAreaElement>(null)
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -44,7 +45,7 @@ export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplat
 
       <Box>
         <Text as="h2">Content</Text>
-        <TextInput ref={contentRef} defaultValue={content ?? ''} />
+        <TextArea ref={contentRef} defaultValue={content ?? ''} />
       </Box>
 
       <Button data-testid="button-save-post">

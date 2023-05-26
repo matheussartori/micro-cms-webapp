@@ -10,6 +10,9 @@ export const TextArea = styled('textarea', {
   padding: '0.5rem',
   borderRadius: 6,
   resize: 'vertical',
+  display: 'flex',
+  width: '100%',
+  height: '30rem',
 
   '&:placeholder': {
     color: '$gray400'
