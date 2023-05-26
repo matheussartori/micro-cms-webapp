@@ -4,9 +4,9 @@ import { PostSummary as PostItemComponent } from '../../molecules/PostSummary'
 export const Container = styled('main', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '3rem',
+  gap: '1rem',
   maxWidth: 1120,
-  margin: '5rem auto',
+  margin: '2rem auto',
   padding: '0 2rem'
 })
 
@@ -14,6 +14,12 @@ export const Actions = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'flex-end'
+})
+
+export const PostContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '3rem'
 })
 
 export const PostItem = styled(PostItemComponent, {

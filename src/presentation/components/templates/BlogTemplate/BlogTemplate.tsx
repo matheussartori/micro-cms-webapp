@@ -1,5 +1,5 @@
 import { PostModel } from '@/data/models/post-model'
-import { Actions, Container, PostItem } from './styles'
+import { Actions, Container, PostContainer, PostItem } from './styles'
 import { Button } from '../../atoms/Button'
 import { Plus } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
@@ -19,15 +19,17 @@ export function BlogTemplate({ posts }: BlogTemplateProps) {
           </Button>
         </Link>
       </Actions>
-      {posts.map(post => (
-        <PostItem
-          key={post.id}
-          id={post.id}
-          title={post.title}
-          content={post.content}
-          time={post.time}
-        />
-      ))}
+      <PostContainer>
+        {posts.map(post => (
+          <PostItem
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            content={post.content}
+            time={post.time}
+          />
+        ))}
+      </PostContainer>
     </Container>
   )
 }
