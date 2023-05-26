@@ -4,7 +4,10 @@ export const globalStyles = globalCss({
   '*': {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+
+    scrollbarWidth: 'auto',
+    scrollbarColor: '$cyan500 $gray900'
   },
 
   body: {
@@ -35,5 +38,23 @@ export const globalStyles = globalCss({
   'a': {
     color: 'inherit',
     textDecoration: 'none'
+  },
+
+  '&::-webkit-scrollbar': {
+    width: 14
+  },
+
+  '&::-webkit-scrollbar-track': {
+    background: '$gray900'
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '$cyan500',
+    borderRadius: 10,
+    border: '3px solid $gray900'
+  },
+
+  '::-webkit-scrollbar-corner': {
+    background: 'transparent'
   }
 })
