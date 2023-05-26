@@ -1,7 +1,7 @@
+import { ReactNode } from 'react'
 import { Panel } from '../../atoms/Panel'
-import { Text } from '../../atoms/Text'
 import { PanelIcon } from '../../molecules/PanelIcon'
-import { Container } from './styles'
+import { Container, Grid, Title } from './styles'
 
 export type Tech = {
   externalUrl: string
@@ -10,24 +10,27 @@ export type Tech = {
 
 export interface AboutTemplateProps {
   techs: Tech[]
+  children: ReactNode
 }
 
-export function AboutTemplate({ techs }: AboutTemplateProps) {
+export function AboutTemplate({ techs, children }: AboutTemplateProps) {
   return (
     <Container>
       <Panel>
-        <Text as="h2">This Micro CMS was developed.</Text>
+        {children}
       </Panel>
       <Panel>
-        <Text as="h2">Technologies used</Text>
-        {techs.map((tech) => (
-          <PanelIcon
-            key={tech.externalUrl}
-            externalUrl={tech.externalUrl}
-            src={tech.image}
-            glowBorder
-          />
-        ))}
+        <Title as="h2" css={{ marginBottom: '0.75rem' }}>Technologies used</Title>
+        <Grid>
+          {techs.map((tech) => (
+            <PanelIcon
+              key={tech.externalUrl}
+              externalUrl={tech.externalUrl}
+              src={tech.image}
+              glowBorder
+            />
+          ))}
+        </Grid>
       </Panel>
     </Container>
   )

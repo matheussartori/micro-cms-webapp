@@ -1,7 +1,6 @@
 import { ComponentProps } from 'react'
-import { Image } from './styles'
+import { Image, PanelContainer } from './styles'
 import { Link } from 'react-router-dom'
-import { Panel } from '../../atoms/Panel'
 
 export interface PanelIconProps extends ComponentProps<typeof Image> {
   externalUrl: string
@@ -15,9 +14,9 @@ export function PanelIcon({
 }: PanelIconProps) {
   return (
     <Link to={externalUrl} target="_blank" data-testid="panel-icon">
-      <Panel glowBorder={glowBorder}>
+      <PanelContainer glowBorder={glowBorder}>
         <Image {...props} />
-      </Panel>
+      </PanelContainer>
     </Link>
   )
 }

@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AboutTemplate, type AboutTemplateProps } from './'
 import { Header } from '../../organisms/Header'
 import stitchesLogoImg from '@/presentation/assets/techs/stitches.png'
+import { Text } from '../../atoms/Text'
 
 export default {
   title: 'Templates/AboutTemplate',
@@ -24,7 +25,10 @@ export default {
         externalUrl: 'https://stitches.dev/',
         image: stitchesLogoImg
       }
-    ]
+    ],
+    children: (
+      <Text>Here you can insert info about this specific page.</Text>
+    )
   }
 } as Meta<AboutTemplateProps>
 
