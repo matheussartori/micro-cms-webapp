@@ -10,6 +10,9 @@ export const {
   theme,
   createTheme
 } = createStitches({
+  media: {
+    mobile: '(max-width: 767px)'
+  },
   theme: {
     colors: {
       white: '#FFFFFF',

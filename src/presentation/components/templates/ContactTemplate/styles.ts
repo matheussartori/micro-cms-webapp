@@ -11,7 +11,11 @@ export const PanelContainer = styled(Panel, {
   display: 'flex',
   justifyContent: 'stretch',
   gap: '2rem',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  '@mobile': {
+    flexDirection: 'column'
+  }
 })
 
 export const Image = styled('img', {
