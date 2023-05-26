@@ -30,7 +30,7 @@ describe('PanelIcon Component', () => {
 
     const panelIconComponent = screen.getByTestId('panel-icon').closest('a')
 
-    expect(panelIconComponent?.href).toBe('http://localhost:3000/any_url')
+    expect(panelIconComponent?.href).toContain('any_url')
     expect(panelIconComponent?.target).toBe('_blank')
   })
 })

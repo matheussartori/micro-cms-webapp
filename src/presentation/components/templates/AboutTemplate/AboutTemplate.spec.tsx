@@ -16,7 +16,7 @@ const techs: Tech[] = [
 ]
 
 describe('AboutTemplate Component', () => {
-  it('should the children correctly', () => {
+  it('should render the children correctly', () => {
     renderWithBrowserRouter(
       <AboutTemplate techs={techs}>
         Lorem Ipsum
@@ -28,7 +28,7 @@ describe('AboutTemplate Component', () => {
     expect(children).toBeDefined()
   })
 
-  it('should the techs correctly', () => {
+  it('should render the techs correctly', () => {
     renderWithBrowserRouter(
       <AboutTemplate techs={techs}>
         Lorem Ipsum

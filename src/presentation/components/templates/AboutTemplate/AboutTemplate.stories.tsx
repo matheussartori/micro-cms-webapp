@@ -29,6 +29,18 @@ export default {
     children: (
       <Text>Here you can insert info about this specific page.</Text>
     )
+  },
+  argTypes: {
+    techs: {
+      control: {
+        type: null
+      }
+    },
+    children: {
+      control: {
+        type: null
+      }
+    }
   }
 } as Meta<AboutTemplateProps>
 

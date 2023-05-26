@@ -1,14 +1,20 @@
-import { Panel } from '../../atoms/Panel'
-import { Text } from '../../atoms/Text'
-import { Container, Image } from './styles'
+import { ReactNode } from 'react'
+import { Container, Image, InfoContainer, PanelContainer } from './styles'
 
-export function ContactTemplate() {
+export interface ContactTemplateProps {
+  imageUrl: string
+  children: ReactNode
+}
+
+export function ContactTemplate({ imageUrl, children }: ContactTemplateProps) {
   return (
     <Container>
-      <Panel>
-        <Image />
-        <Text></Text>
-      </Panel>
+      <PanelContainer>
+        <Image src={imageUrl} />
+        <InfoContainer>
+          {children}
+        </InfoContainer>
+      </PanelContainer>
     </Container>
   )
 }

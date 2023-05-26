@@ -1,1 +1,1 @@
-export { ContactTemplate } from './ContactTemplate'
+export { ContactTemplate, type ContactTemplateProps } from './ContactTemplate'
