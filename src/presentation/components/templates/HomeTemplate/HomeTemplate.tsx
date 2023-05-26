@@ -1,5 +1,9 @@
+import { Container } from './styles'
+
 export function HomeTemplate() {
   return (
-    <div></div>
+    <Container>
+
+    </Container>
   )
 }

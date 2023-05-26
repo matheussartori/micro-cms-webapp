@@ -13,7 +13,8 @@ export const globalStyles = globalCss({
   body: {
     backgroundColor: '$gray900',
     color: '$white',
-    '-webkit-font-smoothing': 'antialiased'
+    '-webkit-font-smoothing': 'antialiased',
+    overflowY: 'scroll'
   },
 
   'body, input, textarea, button': {
