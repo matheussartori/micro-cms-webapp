@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { PostModel } from '@/data/models/post-model'
 import { PostEditTemplate } from '@/presentation/components/templates/PostEditTemplate'
 import { usePost } from '@/presentation/hooks/usePost'
+import { OnSaveParams } from '@/presentation/components/templates/PostEditTemplate/PostEditTemplate'
 
 export function PostEdit() {
   const { postId } = useParams()
@@ -12,9 +13,9 @@ export function PostEdit() {
 
   const post = findPostById(String(postId))
 
-  function handleEditPost(post: Omit<PostModel, 'time'>) {
+  function handleEditPost(post: OnSaveParams) {
     updatePost({
-      id: post.id,
+      id: String(post.id),
       content: post.content,
       title: post.title
     })

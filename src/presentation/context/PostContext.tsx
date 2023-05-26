@@ -33,7 +33,7 @@ export function PostProvider({ children }: PostProviderProps) {
     return post
   }
 
-  function createPost({ content, time, title }: CreatePostParams): void {
+  function createPost({ content, time, title }: CreatePostParams): string {
     const post = {
       id: uuid(),
       content,
@@ -42,6 +42,8 @@ export function PostProvider({ children }: PostProviderProps) {
     }
 
     setPosts([...posts, post])
+
+    return post.id
   }
 
   function updatePost({ id, content, title }: UpdatePostParams): void {

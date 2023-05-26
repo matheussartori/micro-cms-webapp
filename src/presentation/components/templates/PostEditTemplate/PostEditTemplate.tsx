@@ -1,14 +1,24 @@
 import { useRef } from 'react'
 import { FloppyDisk } from '@phosphor-icons/react'
 
-import { PostModel } from '@/data/models/post-model.ts'
 import { Box, Container } from './styles'
 import { TextInput } from '../../atoms/TextInput'
 import { Text } from '../../atoms/Text'
 import { Button } from '../../atoms/Button'
 
-export type PostEditTemplateProps = PostModel & {
-  onSave: (post: Omit<PostModel, 'time'>) => void
+export interface OnSaveParams {
+  id?: string
+  time?: string
+  title: string
+  content: string
+}
+
+export interface PostEditTemplateProps {
+  onSave: (data: OnSaveParams) => void
+  id?: string
+  time?: string
+  title?: string
+  content?: string
 }
 
 export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplateProps) {
@@ -29,12 +39,12 @@ export function PostEditTemplate({ id, title, content, onSave }: PostEditTemplat
     <Container onSubmit={handleSubmit}>
       <Box>
         <Text as="h2">Title</Text>
-        <TextInput ref={titleRef} defaultValue={title} />
+        <TextInput ref={titleRef} defaultValue={title ?? ''} />
       </Box>
 
       <Box>
         <Text as="h2">Content</Text>
-        <TextInput ref={contentRef} defaultValue={content} />
+        <TextInput ref={contentRef} defaultValue={content ?? ''} />
       </Box>
 
       <Button>

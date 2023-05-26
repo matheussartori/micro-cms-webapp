@@ -9,6 +9,12 @@ export const Container = styled('main', {
   margin: '5rem auto'
 })
 
+export const Actions = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'flex-end'
+})
+
 export const PostItem = styled(PostItemComponent, {
   '& + div': {
     '&::before': {

@@ -4,6 +4,7 @@ import { Contact } from '@/presentation/pages/Contact'
 import { Home } from '@/presentation/pages/Home'
 import { Layout } from '@/presentation/pages/Layout'
 import { Post } from '@/presentation/pages/Post'
+import { PostCreate } from '@/presentation/pages/PostCreate/PostCreate'
 import { PostEdit } from '@/presentation/pages/PostEdit'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -17,7 +18,7 @@ export function Router() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/read/:postId" element={<Post />} />
           <Route path="/blog/edit/:postId" element={<PostEdit />} />
-          <Route path="/blog/create" element={<PostEdit />} />
+          <Route path="/blog/create" element={<PostCreate />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
