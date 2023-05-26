@@ -1,14 +1,19 @@
 import { BlogPost as BlogPostModel } from '@/data/models/blog-post'
 import { PostTemplate } from '@/presentation/components/templates/PostTemplate'
-
-const post: BlogPostModel = {
-  content: '<p>Test content</p>',
-  id: 'any',
-  time: 'May 25, 2023',
-  title: 'Lorem Ipsum'
-}
+import { useLocalStorageState } from '@/presentation/hooks/useLocalStorageState'
+import { useParams } from 'react-router-dom'
 
 export function BlogPost() {
+  const { postId } = useParams()
+
+  const [posts] = useLocalStorageState<BlogPostModel[]>('@microcms/posts')
+
+  const post = posts.find(post => post.id === postId)
+
+  if (!post) {
+    return null
+  }
+
   return (
     <PostTemplate
       id={post.id}

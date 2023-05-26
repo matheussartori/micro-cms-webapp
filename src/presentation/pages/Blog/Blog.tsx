@@ -1,34 +1,23 @@
-import { BlogPostItem } from '@/data/models/blog-post-item'
+import { BlogPost } from '@/data/models/blog-post'
 import { BlogTemplate } from '@/presentation/components/templates/BlogTemplate'
-
-const posts: BlogPostItem[] = [
-  {
-    id: '1',
-    shortContent: '1',
-    time: '1',
-    title: '1'
-  },
-  {
-    id: '12',
-    shortContent: '12',
-    time: '12',
-    title: '12'
-  },
-  {
-    id: '126',
-    shortContent: '126',
-    time: '126',
-    title: '126'
-  },
-  {
-    id: '3434',
-    shortContent: '3434',
-    time: '3434',
-    title: '3434'
-  }
-]
+import { useLocalStorageState } from '@/presentation/hooks/useLocalStorageState'
 
 export function Blog() {
+  const [posts] = useLocalStorageState<BlogPost[]>('@microcms/posts', [
+    {
+      id: '14f05b98-8733-49fe-8cdb-f7bf71d8afbf',
+      content: '1',
+      time: 'May 25, 2023',
+      title: 'Test'
+    },
+    {
+      id: 'f20edb22-f0df-4a3f-a218-7adc6a03bc65',
+      content: '12',
+      time: 'May 25, 2023',
+      title: 'Another test'
+    }
+  ])
+
   return (
     <BlogTemplate
       posts={posts}

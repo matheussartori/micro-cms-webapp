@@ -12,7 +12,7 @@ describe('PostItem Component', () => {
         id="any_id"
         time="25 May, 2023"
         title="Title"
-        shortContent="Short content"
+        content="Short content"
       />
     )
 
@@ -36,7 +36,7 @@ describe('PostItem Component', () => {
           id="any_id"
           time="25 May, 2023"
           title="Title"
-          shortContent="Short content"
+          content="Short content"
         />
       </Router>
     )

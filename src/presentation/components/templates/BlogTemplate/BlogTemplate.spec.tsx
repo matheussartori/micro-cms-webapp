@@ -4,19 +4,19 @@ import { renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
 import { BlogTemplate } from './'
 
 describe('BlogTemplate Component', () => {
-  it('should render correctly', () => {
+  it('should render blog posts correctly', () => {
     renderWithBrowserRouter(
       <BlogTemplate posts={[
         {
           id: 'first',
           title: 'first title',
-          shortContent: 'first_short_content',
+          content: 'first_short_content',
           time: 'first_short_content'
         },
         {
           id: 'second',
           title: 'second title',
-          shortContent: 'second_short_content',
+          content: 'second_short_content',
           time: 'second_short_content'
         }
       ]} />
@@ -29,5 +29,29 @@ describe('BlogTemplate Component', () => {
     expect(firstBlogPostItem).toBeDefined()
     expect(secondBlogPostItem).toBeDefined()
     expect(blogPostItems).toHaveLength(2)
+  })
+
+  it('should render large blog posts with sliced content', () => {
+    renderWithBrowserRouter(
+      <BlogTemplate posts={[
+        {
+          id: 'first',
+          title: 'first title',
+          content: 'very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content',
+          time: 'first_short_content'
+        }
+      ]} />
+    )
+
+    const blogPostTextContent = screen.getByTestId('blog-post-item-content').textContent
+    const blogPostItems = screen.getAllByTestId('blog-post-item')
+
+    console.log(blogPostTextContent)
+
+    const hasSlicedNeedle = new RegExp(/.../, 'g')
+
+    expect(blogPostTextContent?.match(hasSlicedNeedle)).toBeTruthy()
+    expect(blogPostTextContent?.length).toBe(300 + 3) // 300 is the slice limit + needle
+    expect(blogPostItems).toHaveLength(1)
   })
 })

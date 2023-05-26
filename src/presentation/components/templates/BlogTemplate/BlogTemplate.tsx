@@ -1,8 +1,8 @@
-import { BlogPostItem } from '@/data/models/blog-post-item.ts'
+import { BlogPost } from '@/data/models/blog-post.ts'
 import { Container, PostItem } from './styles.ts'
 
 export interface BlogTemplateProps {
-  posts: BlogPostItem[]
+  posts: BlogPost[]
 }
 
 export function BlogTemplate({ posts }: BlogTemplateProps) {
@@ -13,7 +13,7 @@ export function BlogTemplate({ posts }: BlogTemplateProps) {
           key={post.id}
           id={post.id}
           title={post.title}
-          shortContent={post.shortContent}
+          content={post.content}
           time={post.time}
         />
       ))}
