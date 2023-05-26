@@ -13,7 +13,7 @@ export function PostCreate() {
     const postId = createPost({
       content: post.content,
       title: post.title,
-      time: new Date()
+      time: Date.now()
     })
 
     navigate(`/blog/read/${postId}`)

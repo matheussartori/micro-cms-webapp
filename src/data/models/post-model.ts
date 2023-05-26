@@ -1,6 +1,6 @@
 export interface PostModel {
   id: string
-  time: Date
+  time: number
   title: string
   content: string
 }

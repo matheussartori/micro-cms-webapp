@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { Container, ShortContent, Time, Title } from './styles'
 import { PostModel } from '@/data/models/post-model.ts'
+import { format } from 'date-fns'
 
 export type PostSummaryProps = ComponentProps<typeof Container> & PostModel
 
@@ -17,7 +18,7 @@ export function PostSummary({ time, title, content, id, ...props}: PostSummaryPr
 
   return (
     <Container data-testid="blog-post-item" {...props}>
-      <Time as="time">{time.toISOString()}</Time>
+      <Time as="time">{format(time, 'MMM d, yyyy')}</Time>
       <Link to={`/blog/read/${id}`}>
         <Title as="h2">{title}</Title>
       </Link>

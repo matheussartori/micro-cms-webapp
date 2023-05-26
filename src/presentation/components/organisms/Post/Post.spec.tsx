@@ -9,7 +9,7 @@ describe('PostModel Component', () => {
         title="Lorem Ipsum"
         id="any"
         content={'<p>content goes here</p>'}
-        time={new Date()}
+        time={Date.now()}
       />
     )
 

@@ -16,7 +16,7 @@ export default {
   ],
   args: {
     id: 'any_id',
-    time: new Date(),
+    time: Date.now(),
     title: 'Title',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo expedita esse veniam illo placeat dicta, voluptatibus exercitationem possimus iste pariatur culpa iure, distinctio officia harum sapiente dolorem? Ab, sunt.'
   },

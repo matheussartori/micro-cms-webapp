@@ -10,7 +10,7 @@ describe('PostSummary Component', () => {
     renderWithBrowserRouter(
       <PostSummary
         id="any_id"
-        time={new Date()}
+        time={Date.now()}
         title="Title"
         content="Short content"
       />
@@ -32,7 +32,7 @@ describe('PostSummary Component', () => {
       <Router location={history.location} navigator={history}>
         <PostSummary
           id="any_id"
-          time={new Date()}
+          time={Date.now()}
           title="Title"
           content="Short content"
         />

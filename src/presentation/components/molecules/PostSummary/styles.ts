@@ -14,7 +14,11 @@ export const Time = styled(Text, {
 })
 
 export const Title = styled(Text, {
-  color: '$gray100'
+  color: '$gray100',
+
+  '&:hover': {
+    color: '$white'
+  }
 })
 
 export const ShortContent = styled(Text, {})

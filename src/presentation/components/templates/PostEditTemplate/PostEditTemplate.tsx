@@ -16,7 +16,7 @@ export interface OnSaveParams {
 export interface PostEditTemplateProps {
   onSave: (data: OnSaveParams) => void
   id?: string
-  time?: Date
+  time?: number
   title?: string
   content?: string
 }
