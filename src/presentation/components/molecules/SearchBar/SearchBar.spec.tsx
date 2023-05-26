@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@/tests/test-utils'
+import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
 import { SearchBar } from './'
 
 describe('SearchBar Component', () => {
   it('should render correctly', () => {
-    render(
+    renderWithBrowserRouter(
       <SearchBar />
     )
 
