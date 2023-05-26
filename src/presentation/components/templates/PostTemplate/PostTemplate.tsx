@@ -1,6 +1,6 @@
 import { PostModel } from '@/data/models/post-model.ts'
 import { Container } from './styles'
-import { Post } from '../../molecules/Post'
+import { Post } from '../../organisms/Post'
 
 export type PostTemplateProps = PostModel
 

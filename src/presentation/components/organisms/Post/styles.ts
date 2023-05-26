@@ -1,4 +1,4 @@
-import { styled } from '@/presentation/styles/stitches.config'
+import { styled } from '@/presentation/styles/stitches.config.ts'
 import { Text } from '../../atoms/Text'
 
 export const Container = styled('article', {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
-import { Post } from './Post'
+import { renderWithBrowserRouter, screen } from '@/tests/test-utils.tsx'
+import { Post } from './Post.tsx'
 
 describe('PostModel Component', () => {
   it('should render with correct props', () => {

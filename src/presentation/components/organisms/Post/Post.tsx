@@ -1,5 +1,5 @@
 import { PostModel } from '@/data/models/post-model.ts'
-import { Actions, Container, HtmlContainer, Time, Title } from './styles'
+import { Actions, Container, HtmlContainer, Time, Title } from './styles.ts'
 import { Button } from '../../atoms/Button'
 import { Link } from 'react-router-dom'
 import { PencilSimple } from '@phosphor-icons/react'
