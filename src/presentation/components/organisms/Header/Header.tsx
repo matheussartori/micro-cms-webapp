@@ -1,3 +1,5 @@
+import { List } from '@phosphor-icons/react'
+
 import { Logo } from '../../atoms/Logo'
 import { MenuItem } from '../../atoms/MenuItem'
 import { SearchBar } from '../../molecules/SearchBar'
@@ -17,6 +19,7 @@ export function Header() {
         <SearchBar />
       </WideContent>
       <MobileContent>
+        <List size={32} />
         <Logo />
       </MobileContent>
     </Container>

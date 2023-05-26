@@ -32,6 +32,7 @@ export const MobileContent = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  gap: '1rem',
 
   '@wide': {
     display: 'none'
