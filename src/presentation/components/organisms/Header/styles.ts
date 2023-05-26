@@ -53,10 +53,12 @@ export const MenuButton = styled('button', {
 export const MobileNavigation = styled('nav', {
   display: 'none',
   position: 'fixed',
+  flexDirection: 'column',
   top: '5rem',
   bottom: 0,
   left: 0,
   right: 0,
   height: 'calc(100vh - 5rem)',
-  backgroundColor: 'red'
+  backgroundColor: '$gray900',
+  padding: '4.5rem'
 })

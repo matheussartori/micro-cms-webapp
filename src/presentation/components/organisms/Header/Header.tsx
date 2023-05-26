@@ -4,10 +4,16 @@ import { Logo } from '../../atoms/Logo'
 import { MenuItem } from '../../atoms/MenuItem'
 import { SearchBar } from '../../molecules/SearchBar'
 import { Container, WideContent, Navigation, MobileContent, MenuButton, MobileNavigation } from './styles'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [location.pathname])
 
   return (
     <Container data-testid="header">
@@ -30,8 +36,7 @@ export function Header() {
           )}
 
         </MenuButton>
-        <MobileNavigation css={{ display: isMenuOpen ? 'block' : 'none'}}>
-          <SearchBar />
+        <MobileNavigation css={{ display: isMenuOpen ? 'flex' : 'none'}}>
           <MenuItem to="/" end>Home</MenuItem>
           <MenuItem to="/about" end>About</MenuItem>
           <MenuItem to="/blog" end>Blog</MenuItem>

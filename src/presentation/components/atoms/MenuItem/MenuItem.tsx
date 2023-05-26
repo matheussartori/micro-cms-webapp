@@ -18,8 +18,15 @@ export const MenuItem = styled(NavLink, {
   color: '$gray300',
   transition: 'color 0.2s',
 
-  '& + a': {
-    marginLeft: '2rem'
+  '@wide': {
+    '& + a': {
+      marginLeft: '2rem'
+    }
+  },
+
+  '@mobile': {
+    width: '100%',
+    textAlign: 'center'
   },
 
   '&:hover': {
