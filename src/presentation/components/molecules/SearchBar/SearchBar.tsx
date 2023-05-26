@@ -5,6 +5,9 @@ import { Container } from './styles'
 import { useState } from 'react'
 import { usePost } from '@/presentation/hooks/usePost'
 import { useNavigate } from 'react-router-dom'
+import { theme } from '@/presentation/styles/stitches.config'
+
+
 
 interface Options {
   value: string
@@ -45,7 +48,9 @@ export function SearchBar() {
             borderTopRightRadius: 0,
             borderBottomRightRadius: 0,
             borderTopLeftRadius: 6,
-            borderBottomLeftRadius: 6
+            borderBottomLeftRadius: 6,
+            backgroundColor: String(theme.colors.gray800),
+            border: 0
           })
         }}
         options={options}
