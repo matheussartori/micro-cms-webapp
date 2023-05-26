@@ -1,5 +1,7 @@
+import { HomeTemplate } from '@/presentation/components/templates/HomeTemplate'
+
 export function Home() {
   return (
-    <h1>Home</h1>
+    <HomeTemplate />
   )
 }
