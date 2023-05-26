@@ -12,7 +12,12 @@ export const Panel = styled('div', {
   variants: {
     glowBorder: {
       true: {
-        boxShadow: '0 0 8px 3px $colors$cyan500'
+        boxShadow: '0 0 6px 3px $colors$cyan500',
+        transition: 'box-shadow 0.2s',
+
+        '&:hover': {
+          boxShadow: '0 0 6px 3px $colors$yellow500'
+        }
       }
     }
   }
