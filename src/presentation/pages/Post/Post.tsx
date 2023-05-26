@@ -5,13 +5,9 @@ import { useParams } from 'react-router-dom'
 export function Post() {
   const { postId } = useParams()
 
-  const { posts } = usePost()
+  const { findPostById } = usePost()
 
-  const post = posts.find(post => post.id === postId)
-
-  if (!post) {
-    return null
-  }
+  const post = findPostById(String(postId))
 
   return (
     <PostTemplate
