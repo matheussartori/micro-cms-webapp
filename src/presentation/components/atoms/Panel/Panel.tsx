@@ -7,5 +7,13 @@ export const Panel = styled('div', {
   width: '100%',
   borderRadius: 6,
   padding: '1rem',
-  backgroundColor: '$gray850'
+  backgroundColor: '$gray850',
+
+  variants: {
+    glowBorder: {
+      true: {
+        boxShadow: '0 0 8px 3px $colors$cyan500'
+      }
+    }
+  }
 })

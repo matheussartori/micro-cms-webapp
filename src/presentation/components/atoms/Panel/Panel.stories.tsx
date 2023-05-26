@@ -32,6 +32,17 @@ export const Default: StoryObj<PanelProps> = {
   }
 }
 
+export const GlowBorder: StoryObj<PanelProps> = {
+  args: {
+    css: {
+      height: 200,
+      width: 200
+    },
+    glowBorder: true
+  }
+}
+
+
 export const WithTextContent: StoryObj<PanelProps> = {
   args: {
     children: (
