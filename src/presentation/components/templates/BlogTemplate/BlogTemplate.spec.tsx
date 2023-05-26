@@ -11,13 +11,13 @@ describe('BlogTemplate Component', () => {
           id: 'first',
           title: 'first title',
           content: 'first_short_content',
-          time: 'first_short_content'
+          time: new Date()
         },
         {
           id: 'second',
           title: 'second title',
           content: 'second_short_content',
-          time: 'second_short_content'
+          time: new Date()
         }
       ]} />
     )
@@ -38,7 +38,7 @@ describe('BlogTemplate Component', () => {
           id: 'first',
           title: 'first title',
           content: 'very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content_very_large_content',
-          time: 'first_short_content'
+          time: new Date()
         }
       ]} />
     )

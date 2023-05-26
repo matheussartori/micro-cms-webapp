@@ -16,7 +16,7 @@ export default {
   ],
   args: {
     id: 'any_id',
-    time: '25 May, 2023',
+    time: new Date(),
     title: 'Title',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo expedita esse veniam illo placeat dicta, voluptatibus exercitationem possimus iste pariatur culpa iure, distinctio officia harum sapiente dolorem? Ab, sunt.'
   },

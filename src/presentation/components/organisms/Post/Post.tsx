@@ -10,7 +10,7 @@ export function Post({ id, title, time, content }: PostProps) {
   return (
     <Container>
       <Title as="h1">{title}</Title>
-      <Time as="time">{time}</Time>
+      <Time as="time">{time.toISOString()}</Time>
       <HtmlContainer dangerouslySetInnerHTML={{ __html: content }} />
       <Actions>
         <Link to={`/blog/edit/${id}`}>

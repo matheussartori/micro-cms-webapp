@@ -10,17 +10,15 @@ describe('PostSummary Component', () => {
     renderWithBrowserRouter(
       <PostSummary
         id="any_id"
-        time="25 May, 2023"
+        time={new Date()}
         title="Title"
         content="Short content"
       />
     )
 
-    const postSummaryByTime = screen.getByText(/25 May, 2023/i)
     const postSummaryByTitle = screen.getByText(/title/i)
     const postSummaryByShortContent = screen.getByText(/short content/i)
 
-    expect(postSummaryByTime).toBeDefined()
     expect(postSummaryByTitle).toBeDefined()
     expect(postSummaryByShortContent).toBeDefined()
   })
@@ -34,7 +32,7 @@ describe('PostSummary Component', () => {
       <Router location={history.location} navigator={history}>
         <PostSummary
           id="any_id"
-          time="25 May, 2023"
+          time={new Date()}
           title="Title"
           content="Short content"
         />

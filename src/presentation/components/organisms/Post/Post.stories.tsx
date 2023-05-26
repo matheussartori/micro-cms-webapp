@@ -17,7 +17,7 @@ export default {
   args: {
     content: '<p>Content goes here</p>',
     id: 'any',
-    time: 'May 25, 2023',
+    time: new Date(),
     title: 'Lorem Ipsum'
   }
 } as Meta<PostProps>

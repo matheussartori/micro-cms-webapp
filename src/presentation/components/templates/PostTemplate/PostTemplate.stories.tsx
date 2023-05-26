@@ -19,7 +19,7 @@ export default {
   args: {
     id: 'any',
     content: '<p>content goes here.</p> <p>this text is written with HTML tags.</p> <strong>STRONG TEXT</strong> <pre>PRE TEXT</pre>',
-    time: 'May 25, 2023',
+    time: new Date(),
     title: 'Lorem Ipsum'
   },
   argTypes: {

@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import { PostEditTemplate } from '@/presentation/components/templates/PostEditTemplate'
 import { usePost } from '@/presentation/hooks/usePost'
@@ -13,7 +13,7 @@ export function PostCreate() {
     const postId = createPost({
       content: post.content,
       title: post.title,
-      time: new Date().toISOString()
+      time: new Date()
     })
 
     navigate(`/blog/read/${postId}`)

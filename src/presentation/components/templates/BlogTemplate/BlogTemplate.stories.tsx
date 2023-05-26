@@ -21,7 +21,7 @@ export default {
       {
         id: 'any_id',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, fuga autem aperiam quis, consequatur commodi cupiditate beatae earum tenetur illo molestiae debitis molestias eveniet. Itaque, aliquam dolorem. Optio, quis...',
-        time: 'May 25, 2023',
+        time: new Date(),
         title: 'Lorem Ipsum'
       }
     ]

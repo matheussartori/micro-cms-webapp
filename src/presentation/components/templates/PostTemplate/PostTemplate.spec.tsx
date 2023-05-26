@@ -9,7 +9,7 @@ describe('PostTemplate Component', () => {
       <PostTemplate
         id="any"
         content="<p>Test content</p>"
-        time="May 25, 2023"
+        time={new Date()}
         title="Lorem Ipsum"
       />
     )

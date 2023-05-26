@@ -17,7 +17,7 @@ export function PostSummary({ time, title, content, id, ...props}: PostSummaryPr
 
   return (
     <Container data-testid="blog-post-item" {...props}>
-      <Time as="time">{time}</Time>
+      <Time as="time">{time.toISOString()}</Time>
       <Link to={`/blog/read/${id}`}>
         <Title as="h2">{title}</Title>
       </Link>

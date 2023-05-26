@@ -1,6 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom'
 
-import { PostModel } from '@/data/models/post-model'
 import { PostEditTemplate } from '@/presentation/components/templates/PostEditTemplate'
 import { usePost } from '@/presentation/hooks/usePost'
 import { OnSaveParams } from '@/presentation/components/templates/PostEditTemplate/PostEditTemplate'

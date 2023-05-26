@@ -8,7 +8,7 @@ import { Button } from '../../atoms/Button'
 
 export interface OnSaveParams {
   id?: string
-  time?: string
+  time?: Date
   title: string
   content: string
 }
@@ -16,6 +16,7 @@ export interface OnSaveParams {
 export interface PostEditTemplateProps {
   onSave: (data: OnSaveParams) => void
   id?: string
+  time?: Date
   title?: string
   content?: string
 }
