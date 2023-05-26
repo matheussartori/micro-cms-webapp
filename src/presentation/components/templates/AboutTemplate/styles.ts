@@ -20,5 +20,6 @@ export const Grid = styled('div', {
 
 export const Title = styled(Text, {
   color: '$gray100',
-  display: 'block'
+  display: 'block',
+  fontSize: '$md'
 })
