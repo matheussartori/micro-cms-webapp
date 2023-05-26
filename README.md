@@ -1,6 +1,6 @@
 # Micro CMS
 
-## How tu run locally
+## How to run locally
 
 You can run the micro CMS using docker:
 
