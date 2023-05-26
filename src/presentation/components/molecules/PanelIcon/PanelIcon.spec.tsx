@@ -1,9 +1,7 @@
-import { describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, renderWithBrowserRouter, screen } from '@/tests/test-utils'
+import { describe, expect, it } from 'vitest'
+import { renderWithBrowserRouter, screen } from '@/tests/test-utils'
 
 import { PanelIcon } from './'
-import { createMemoryHistory } from 'history'
-import { Router } from 'react-router-dom'
 
 describe('PanelIcon Component', () => {
   it('should render with correct params', () => {
