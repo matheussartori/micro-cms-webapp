@@ -60,5 +60,5 @@ export const MobileNavigation = styled('nav', {
   right: 0,
   height: 'calc(100vh - 5rem)',
   backgroundColor: '$gray900',
-  padding: '4.5rem'
+  padding: '2.5rem'
 })

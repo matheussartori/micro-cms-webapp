@@ -13,6 +13,7 @@ export function Header() {
 
   useEffect(() => {
     setIsMenuOpen(false)
+    window.scrollTo(0, 0)
   }, [location.pathname])
 
   return (
@@ -37,6 +38,7 @@ export function Header() {
 
         </MenuButton>
         <MobileNavigation css={{ display: isMenuOpen ? 'flex' : 'none'}}>
+          <SearchBar />
           <MenuItem to="/" end>Home</MenuItem>
           <MenuItem to="/about" end>About</MenuItem>
           <MenuItem to="/blog" end>Blog</MenuItem>

@@ -7,8 +7,6 @@ import { usePost } from '@/presentation/hooks/usePost'
 import { useNavigate } from 'react-router-dom'
 import { theme } from '@/presentation/styles/stitches.config'
 
-
-
 interface Options {
   value: string
   label: string
@@ -39,6 +37,10 @@ export function SearchBar() {
   return (
     <Container data-testid="searchbar">
       <Select
+        components={{
+          IndicatorSeparator: () => null,
+          DropdownIndicator: () => null
+        }}
         styles={{
           control: (baseStyles) => ({
             ...baseStyles,
@@ -50,8 +52,32 @@ export function SearchBar() {
             borderTopLeftRadius: 6,
             borderBottomLeftRadius: 6,
             backgroundColor: String(theme.colors.gray800),
-            border: 0
+            border: 0,
+            boxShadow: 'none'
+          }),
+          menu: (baseStyles) => ({
+            ...baseStyles,
+            backgroundColor: String(theme.colors.gray800)
+          }),
+          option: (baseStyles) => ({
+            ...baseStyles,
+            color: String(theme.colors.gray100),
+            backgroundColor: String(theme.colors.gray800),
+            '&:hover': {
+              backgroundColor: String(theme.colors.gray700)
+            }
+          }),
+          input: (baseStyles) => ({
+            ...baseStyles,
+            color: String(theme.colors.gray100)
           })
+        }}
+        noOptionsMessage={() => {
+          if (searchTerm.length >= 3) {
+            return 'No posts found.'
+          }
+
+          return 'Type at least 3 characters to search.'
         }}
         options={options}
         inputValue={searchTerm}
