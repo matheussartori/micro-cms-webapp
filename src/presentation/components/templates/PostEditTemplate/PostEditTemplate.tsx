@@ -3,7 +3,6 @@ import { FloppyDisk } from '@phosphor-icons/react'
 
 import { Box, Container, Label } from './styles'
 import { TextInput } from '../../atoms/TextInput'
-import { Text } from '../../atoms/Text'
 import { Button } from '../../atoms/Button'
 import { TextArea } from '../../atoms/TextArea'
 
