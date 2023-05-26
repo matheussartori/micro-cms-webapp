@@ -1,9 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Post, type PostProps } from './'
+import { BrowserRouter } from 'react-router-dom'
 
 export default {
-  title: 'Molecules/PostModel',
+  title: 'Molecules/Post',
   component: Post,
+  decorators: [
+    (Story) => {
+      return (
+        <BrowserRouter>
+          {Story()}
+        </BrowserRouter>
+      )
+    }
+  ],
   args: {
     content: '<p>Content goes here</p>',
     id: 'any',
