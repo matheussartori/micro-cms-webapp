@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { ContactTemplate, ContactTemplateProps } from './'
+import { ContactTemplate, type ContactTemplateProps } from './'
 import { BrowserRouter } from 'react-router-dom'
 import { Header } from '../../organisms/Header'
 import { Text } from '../../atoms/Text'
