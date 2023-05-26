@@ -9,7 +9,7 @@ export const Container = styled('header', {
   zIndex: 10
 })
 
-export const Content = styled('div', {
+export const WideContent = styled('div', {
   maxWidth: 1120,
   height: '5rem',
   margin: '0 auto',
@@ -17,7 +17,25 @@ export const Content = styled('div', {
 
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+
+  '@mobile': {
+    display: 'none'
+  }
+})
+
+export const MobileContent = styled('div', {
+  height: '5rem',
+  margin: '0 auto',
+  padding: '0 2rem',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+
+  '@wide': {
+    display: 'none'
+  }
 })
 
 export const Navigation = styled('nav', {

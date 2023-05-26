@@ -1,12 +1,12 @@
 import { Logo } from '../../atoms/Logo'
 import { MenuItem } from '../../atoms/MenuItem'
 import { SearchBar } from '../../molecules/SearchBar'
-import { Container, Content, Navigation } from './styles'
+import { Container, WideContent, Navigation, MobileContent } from './styles'
 
 export function Header() {
   return (
     <Container data-testid="header">
-      <Content>
+      <WideContent>
         <Logo />
         <Navigation>
           <MenuItem to="/" end>Home</MenuItem>
@@ -15,7 +15,10 @@ export function Header() {
           <MenuItem to="/contact" end>Contact</MenuItem>
         </Navigation>
         <SearchBar />
-      </Content>
+      </WideContent>
+      <MobileContent>
+        <Logo />
+      </MobileContent>
     </Container>
   )
 }

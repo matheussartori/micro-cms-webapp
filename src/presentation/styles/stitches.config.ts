@@ -11,7 +11,8 @@ export const {
   createTheme
 } = createStitches({
   media: {
-    mobile: '(max-width: 767px)'
+    mobile: '(max-width: 767px)',
+    wide: '(min-width: 768px)'
   },
   theme: {
     colors: {
@@ -31,6 +32,7 @@ export const {
     },
 
     fontSizes: {
+      sm: '0.875rem',
       md: '1.125rem',
       lg: '1.25rem',
       xl: '1.5rem',

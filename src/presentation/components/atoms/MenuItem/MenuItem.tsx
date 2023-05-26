@@ -40,5 +40,9 @@ export const MenuItem = styled(NavLink, {
       left: 0,
       backgroundColor: '$yellow500'
     }
+  },
+
+  '@media screen and (max-width: 800px)': {
+    fontSize: '$sm'
   }
 })
