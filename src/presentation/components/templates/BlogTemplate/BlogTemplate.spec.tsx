@@ -46,8 +46,6 @@ describe('BlogTemplate Component', () => {
     const blogPostTextContent = screen.getByTestId('blog-post-item-content').textContent
     const blogPostItems = screen.getAllByTestId('blog-post-item')
 
-    console.log(blogPostTextContent)
-
     const hasSlicedNeedle = new RegExp(/.../, 'g')
 
     expect(blogPostTextContent?.match(hasSlicedNeedle)).toBeTruthy()
