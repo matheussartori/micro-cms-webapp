@@ -24,9 +24,7 @@ export const {
 
       cyan500: '#61dafb',
       cyan300: '#7ddbf5',
-      yellow500: '#eba417',
-      red500: '#e84646',
-      red300: '#f06060'
+      yellow500: '#eba417'
     },
 
     fontSizes: {

@@ -20,18 +20,5 @@ export const Button = styled('button', {
   '&:hover': {
     transition: 'background-color 0.2s',
     backgroundColor: '$cyan300'
-  },
-
-  variants: {
-    variant: {
-      danger: {
-        backgroundColor: '$red500',
-
-        '&:hover': {
-          transition: 'background-color 0.2s',
-          backgroundColor: '$red300'
-        }
-      }
-    }
   }
 })
