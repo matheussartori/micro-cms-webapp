@@ -13,6 +13,7 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages",
     "test": "vitest watch",
     "test:ci": "vitest run",
     "test:full": "vitest run --coverage && NODE_ENV=TESTS start-server-and-test dev:test http://localhost:7357 test:e2e",
