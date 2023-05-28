@@ -27,10 +27,10 @@ jobs:
       - name: Build the application
         run: npm run build
 
-      - name: Run the unit tests
+      - name: Run the unit and integration tests
         run: npm run test:ci
 
-      - name: Setup cypress
+      - name: Run the e2e tests
         uses: cypress-io/github-action@v5
         with:
           start: npm run preview
