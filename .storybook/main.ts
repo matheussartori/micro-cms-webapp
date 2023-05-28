@@ -14,5 +14,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/micro-cms-webapp'
+    }
+
+    return config
+  }
 };
 export default config;
