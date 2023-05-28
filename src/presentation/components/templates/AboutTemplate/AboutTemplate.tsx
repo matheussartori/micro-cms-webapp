@@ -15,7 +15,7 @@ export interface AboutTemplateProps {
 
 export function AboutTemplate({ techs, children }: AboutTemplateProps) {
   return (
-    <Container>
+    <Container data-testid="about-container">
       <Panel>
         {children}
       </Panel>

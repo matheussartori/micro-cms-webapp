@@ -13,13 +13,13 @@ export function BlogTemplate({ posts }: BlogTemplateProps) {
     <Container>
       <Actions>
         <Link to="/blog/create">
-          <Button>
+          <Button data-testid="blog-post-create-button">
             <Plus />
           Add post
           </Button>
         </Link>
       </Actions>
-      <PostContainer>
+      <PostContainer data-testid="blog-post-container">
         {posts.map(post => (
           <PostItem
             key={post.id}

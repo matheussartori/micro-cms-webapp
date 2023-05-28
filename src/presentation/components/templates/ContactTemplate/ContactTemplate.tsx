@@ -8,10 +8,10 @@ export interface ContactTemplateProps {
 
 export function ContactTemplate({ imageUrl, children }: ContactTemplateProps) {
   return (
-    <Container>
+    <Container data-testid="contact-container">
       <PanelContainer>
-        <Image src={imageUrl} />
-        <InfoContainer>
+        <Image src={imageUrl} data-testid="contact-avatar" />
+        <InfoContainer data-testid="contact-info">
           {children}
         </InfoContainer>
       </PanelContainer>

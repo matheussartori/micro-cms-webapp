@@ -10,12 +10,12 @@ export type PostProps = PostModel
 export function Post({ id, title, time, content }: PostProps) {
   return (
     <Container>
-      <Title as="h1">{title}</Title>
+      <Title as="h1" data-testid="post-title">{title}</Title>
       <Time as="time">{format(time, 'MMM d, yyyy')}</Time>
-      <HtmlContainer dangerouslySetInnerHTML={{ __html: content }} />
+      <HtmlContainer data-testid="post-content" dangerouslySetInnerHTML={{ __html: content }} />
       <Actions>
         <Link to={`/blog/edit/${id}`}>
-          <Button>
+          <Button data-testid="edit-post-button">
             <PencilSimple />Edit post
           </Button>
         </Link>

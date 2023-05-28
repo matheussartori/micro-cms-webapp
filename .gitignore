@@ -25,6 +25,8 @@ dist-ssr
 
 # Tests
 coverage
+tests/libs/cypress/videos
+tests/libs/cypress/screenshots
 
 # Storybook
 storybook-static

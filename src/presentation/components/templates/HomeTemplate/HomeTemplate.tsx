@@ -16,9 +16,10 @@ export function HomeTemplate({
   return (
     <>
       <Hero
+        data-testid="main-hero"
         src={heroImg}
       />
-      <Container>
+      <Container data-testid="articles">
         {firstArticle}
         {secondArticle}
       </Container>

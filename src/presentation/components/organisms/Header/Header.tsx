@@ -20,7 +20,7 @@ export function Header() {
     <Container data-testid="header">
       <WideContent>
         <Logo />
-        <Navigation>
+        <Navigation data-testid="header-wide-navigation">
           <MenuItem to="/" end>Home</MenuItem>
           <MenuItem to="/about" end>About</MenuItem>
           <MenuItem to="/blog" end>Blog</MenuItem>
@@ -29,7 +29,7 @@ export function Header() {
         <SearchBar />
       </WideContent>
       <MobileContent>
-        <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} data-testid="header-mobile-menu">
           {isMenuOpen ? (
             <X size={32} color="#FFF" />
           ) : (
@@ -37,7 +37,7 @@ export function Header() {
           )}
 
         </MenuButton>
-        <MobileNavigation css={{ display: isMenuOpen ? 'flex' : 'none'}}>
+        <MobileNavigation css={{ display: isMenuOpen ? 'flex' : 'none'}} data-testid="header-mobile-navigation">
           <SearchBar />
           <MenuItem to="/" end>Home</MenuItem>
           <MenuItem to="/about" end>About</MenuItem>
