@@ -38,7 +38,7 @@ You can access the Micro CMS with the URLs below:
   <tbody>
     <tr>
       <td><code>webapp</code></td>
-      <td><a href="https://micro-cms.matheussartori.com.br">https://micro-cms.matheussartori.com.br</a></td>
+      <td><a href="https://micro-cms.matheussartori.com">https://micro-cms.matheussartori.com.br</a></td>
     </tr>
     <tr>
       <td><code>storybook</code></td>
