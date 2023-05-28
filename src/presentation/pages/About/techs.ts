@@ -5,6 +5,7 @@ import stitchesLogoImg from '@/presentation/assets/techs/stitches.png'
 import viteLogoImg from '@/presentation/assets/techs/vite.png'
 import vitestLogoImg from '@/presentation/assets/techs/vitest.png'
 import dateFnsLogoImg from '@/presentation/assets/techs/date-fns.png'
+import cypressLogoImg from '@/presentation/assets/techs/cypress.png'
 
 export const techs: Tech[] = [
   {
@@ -26,5 +27,9 @@ export const techs: Tech[] = [
   {
     externalUrl: 'https://date-fns.org',
     image: dateFnsLogoImg
+  },
+  {
+    externalUrl: 'https://www.cypress.io',
+    image: cypressLogoImg
   }
 ]
