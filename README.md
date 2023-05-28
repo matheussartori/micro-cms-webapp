@@ -122,6 +122,8 @@ The Micro CMS design was made with the atomic design methodology. The components
 
 You can check and play with all of them in the storybook.
 
+<img src="./.github/assets/screenshots/storybook.png" alt="Storybook screenshot">
+
 ## Why vite?
 
 I chose to package the project with Vite instead of using a framework like Next.js, despite its recommendation in the new React.js documentation. This decision was made to showcase my proficiency in pure React.js development, non-framework specific.
