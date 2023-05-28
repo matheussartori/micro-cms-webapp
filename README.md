@@ -38,11 +38,11 @@ You can access the Micro CMS with the URLs below:
   <tbody>
     <tr>
       <td><code>webapp</code></td>
-      <td><a href="https://micro-cms.matheussartori.com">https://micro-cms.matheussartori.com.br</a></td>
+      <td><a href="https://micro-cms.matheussartori.com">https://micro-cms.matheussartori.com</a></td>
     </tr>
     <tr>
       <td><code>storybook</code></td>
-      <td><a href="https://matheussartori.github.io/micro-cms-webapp">https://matheussartori.github.io/micro-cms-webapp</a></td>
+      <td><a href="https://matheussartori.github.io/micro-cms-webapp/?path=/docs/docs-molecules--docs">https://matheussartori.github.io/micro-cms-webapp</a></td>
     </tr>
   </tbody>
 </table>
