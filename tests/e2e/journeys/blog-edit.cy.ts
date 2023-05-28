@@ -11,7 +11,7 @@ describe('Blog edit journeys', () => {
     cy.location('pathname').should('contain', '/blog/read')
   })
 
-  it.only('should be able to edit a post', () => {
+  it('should be able to edit a post', () => {
     cy.visit('/blog')
 
     cy.get('[data-testid="blog-post-item"]').should('exist').first().should('contain.html', 'React Canaries').find('a').click()

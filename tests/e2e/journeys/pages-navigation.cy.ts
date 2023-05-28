@@ -27,7 +27,7 @@ describe('Pages navigation journeys', () => {
       .find('input')
       .first()
       .type('react')
-    cy.get('#react-select-3-option-0')
+    cy.get('[id^=react-select-][id$=-option-0]')
       .click()
     cy.location('pathname').should('contain', '/blog/read')
   })

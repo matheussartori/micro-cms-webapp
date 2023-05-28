@@ -34,7 +34,7 @@ describe('Mobile pages navigation journeys', () => {
       .find('input')
       .last()
       .type('react')
-    cy.get('#react-select-5-option-0')
+    cy.get('[id^=react-select-][id$=-option-0]')
       .click()
     cy.location('pathname').should('contain', '/blog/read')
   })
