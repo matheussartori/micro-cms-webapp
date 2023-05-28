@@ -1,0 +1,37 @@
+import { Meta } from '@storybook/addon-docs'
+import { BrowserRouter } from 'react-router-dom'
+
+import { Header } from '../../components/organisms/Header'
+import { Post } from '../../components/organisms/Post'
+
+import { PostProvider } from '../../context/PostContext'
+import stitchesLogoImg from '../../assets/techs/stitches.png'
+
+<Meta title="Docs/Organisms" />
+
+# Organisms
+
+## Header
+
+The header component consists in ```<MenuLink />```, ```<Logo />``` atoms and ```<SearchBar />``` molecule composed together.
+
+<BrowserRouter>
+  <PostProvider>
+    <Header />
+  </PostProvider>
+</BrowserRouter>
+
+## Post
+
+The post component consists in ```<Button />``` and ```<Text />``` atoms composed together.
+
+<BrowserRouter>
+  <PostProvider>
+    <Post
+      id="any_id"
+      time={Date.now()}
+      title="Title"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo expedita esse veniam illo placeat dicta, voluptatibus exercitationem possimus iste pariatur culpa iure, distinctio officia harum sapiente dolorem? Ab, sunt."
+    />
+  </PostProvider>
+</BrowserRouter>
