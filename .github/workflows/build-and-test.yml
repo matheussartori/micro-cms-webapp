@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-unit-integration-tests:
-    name: Unit tests
+    name: Build and run all tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
