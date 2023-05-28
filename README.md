@@ -1,4 +1,17 @@
-# Micro CMS
+<h3 align="center">
+  Micro CMS
+</h3>
+
+<blockquote align="center">
+  MicroCMS is a lightweight CMS (Content Management System) built for simplicity and ease of use. It empowers users to create and edit posts, which are saved directly in the browser's local storage. With its intuitive interface and minimalistic design, TinyCMS offers a hassle-free solution for managing and publishing content without the need for complex setups or external databases.
+</blockquote>
+<br>
+
+<p align="center">
+  <a href="#how-to-run-locally">How to run locally</a><br>
+  <a href="#site-structure">Site structure</a><br>
+  <a href="#why-vite">Why vite?</a><br>
+</p>
 
 ## How to run locally
 
@@ -20,7 +33,7 @@ npm run dev # Start the micro CMS
 npm run storybook # Start the storybook
 ```
 ## Site structure
-For the micro CMS, I've considered the structure (templates) for the website based on the following wireframes:
+For the micro CMS, I've considered the structure (templates) for the website based on the following wireframes, which you can compare with the final results.
 
 ### Home
 <img src="./.github/assets/wireframes/home.png" alt="Home">
