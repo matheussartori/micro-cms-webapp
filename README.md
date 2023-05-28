@@ -15,11 +15,37 @@
 </p>
 
 <p align="center">
+  <a href="#live-application">Live application</a><br>
   <a href="#how-to-run-locally">How to run locally</a><br>
   <a href="#usefull-commands">Usefull commands</a><br>
+  <a href="#atomic-design">Atomic design</a><br>
   <a href="#why-vite">Why vite?</a><br>
+  <a href="#cicd">CI/CD</a><br>
   <a href="#site-structure">Site structure</a>
 </p>
+
+## Live application
+
+You can access the Micro CMS with the URLs below:
+
+<table>
+  <thead>
+    <tr>
+      <th>Application</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>webapp</code></td>
+      <td><a href="https://micro-cms.matheussartori.com.br">https://micro-cms.matheussartori.com.br</a></td>
+    </tr>
+    <tr>
+      <td><code>storybook</code></td>
+      <td><a href="https://matheussartori.github.io/micro-cms-webapp">https://matheussartori.github.io/micro-cms-webapp</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## How to run locally
 
@@ -90,9 +116,19 @@ npm run storybook # Start the storybook
   </tbody>
 </table>
 
+## Atomic design
+
+The Micro CMS design was made with the atomic design methodology. The components are divided in atoms, molecules, organisms, templates and pages.
+
+You can check and play with all of them in the storybook.
+
 ## Why vite?
 
 I chose to package the project with Vite instead of using a framework like Next.js, despite its recommendation in the new React.js documentation. This decision was made to showcase my proficiency in pure React.js development, non-framework specific.
+
+## CI/CD
+
+This application has 2 workflows, one for the storybook deploy on github pages, and other for building the application and running all the tests.
 
 ## Site structure
 For the micro CMS, I've considered the structure (templates) for the website based on the following wireframes, which you can compare with the final results.
