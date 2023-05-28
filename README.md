@@ -8,6 +8,13 @@
 <br>
 
 <p align="center">
+
+<img alt="License status badge" src="https://img.shields.io/github/license/matheussartori/micro-cms-webapp?color=%2361dafb&style=flat-square" /> <img alt="Build and tests status badge" src="https://img.shields.io/github/actions/workflow/status/matheussartori/micro-cms-webapp/build-and-test.yml?branch=main&color=%2361dafb&label=build%20and%20tests&style=flat-square" />
+<img alt="Storybook build status badge" src="https://img.shields.io/github/actions/workflow/status/matheussartori/micro-cms-webapp/build-and-test.yml?branch=main&color=%2361dafb&label=storybook%20build&style=flat-square" />
+
+</p>
+
+<p align="center">
   <a href="#how-to-run-locally">How to run locally</a><br>
   <a href="#usefull-commands">Usefull commands</a><br>
   <a href="#why-vite">Why vite?</a><br>
